@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,18 +19,37 @@
             </intent-filter>
         </activity>
 
-        //Inicia Form I
-        <activity android:name=".FormIActivity"
-            android:label="Formulario I"
+
+        <activity
+            android:name=".FormIActivity"
+            android:label="Formulario I Identificación del Formulario"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"
-                />
-            <intent-filter>
+                android:value=".MainActivity" />
+
+           <!-- <intent-filter>
                 <action android:name="android.intent.action.FormIActivity" />
+
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            </intent-filter>-->
+        </activity>
+
+
+
+        <activity
+            android:name=".FormIIActivity"
+            android:label="Formulario II Identificación de la vivienda"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.FormIIActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>-->
 
         </activity>
     </application>

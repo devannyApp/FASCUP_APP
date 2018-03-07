@@ -1,6 +1,7 @@
 package android.fascup.com.fascup;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -39,7 +40,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent i;
         switch (v.getId()){
             case R.id.CardViewForm_I: i = new Intent(this,FormIActivity.class);startActivity(i);
+            CardViewForm_I.setCardBackgroundColor(Color.GREEN);
 
+
+            case R.id.CardViewForm_II: i = new Intent(this,FormIIActivity.class);startActivity(i);
             default:break;
         }
     }

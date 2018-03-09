@@ -23,4 +23,8 @@
     <color name="grisfondo">#f1f8e9</color>
     <color name="blancoletra">#fff</color>
 
+
+    <!-- Furmulario 1-->
+    <color name="grisfondologo">#f2f2f2</color>
+
 </resources>

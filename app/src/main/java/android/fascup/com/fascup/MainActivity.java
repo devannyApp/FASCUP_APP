@@ -39,11 +39,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         Intent i;
         switch (v.getId()){
-            case R.id.CardViewForm_I: i = new Intent(this,FormIActivity.class);startActivity(i);
+           case R.id.CardViewForm_I: i = new Intent(this,FormIActivity.class);startActivity(i);
             CardViewForm_I.setCardBackgroundColor(Color.GREEN);
 
 
-            case R.id.CardViewForm_II: i = new Intent(this,FormIIActivity.class);startActivity(i);
+           case R.id.CardViewForm_II: i = new Intent(this,FormIIActivity.class);startActivity(i);
             default:break;
         }
     }

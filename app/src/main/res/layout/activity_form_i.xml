@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="190dp"
             android:orientation="vertical"
-            android:layout_marginTop="60dp">
+            android:layout_marginTop="40dp">
 
             <!--imagen logo-->
             <ImageView
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="vertical"
-            android:layout_marginTop="250dp">
+            android:layout_marginTop="240dp">
 
             <!--mensaje label-->
             <TextView
@@ -45,9 +45,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="5dp"
                 android:text="Registre los siguientes datos"
-                android:textSize="30sp" />
+                android:textSize="20sp" />
         </LinearLayout>
 
         <!--  Contenedor columna row Input-->
@@ -55,11 +54,11 @@
             android:layout_width="match_parent"
             android:layout_height="400dp"
             android:orientation="vertical"
-            android:layout_marginTop="310dp">
+            android:layout_marginTop="270dp">
 
             <!-- Columna 1 Inputs -->
             <LinearLayout
-                android:layout_margin="60dp"
+                android:layout_margin="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
@@ -74,7 +73,7 @@
                     android:inputType="number"
                     android:hint="Nro Cuestionario"
                     android:textColor="#6b6b6b"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     android:visibility="visible" />
 
                 <!--Encuestador-->
@@ -82,82 +81,56 @@
                     android:id="@+id/encuestador"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/edittextstyle"
                     android:drawableLeft="@drawable/ic_action_user"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:hint="Encuestador (a)"
                     android:textColor="#6b6b6b"
-                    android:textSize="25sp" />
+                    android:textSize="20sp" />
 
                 <!--Supervisor-->
                 <EditText
                     android:id="@+id/supervisor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/edittextstyle"
                     android:drawableLeft="@drawable/ic_action_user"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:hint="Supervisor (a)"
                     android:textColor="#6b6b6b"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     android:visibility="visible" />
 
-                <!--Hidden Hora de inicio-->
-                <EditText
-                    android:id="@+id/hora_inicio"
+                <Button
+                    android:id="@+id/sutmit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="name1"
-                    android:visibility="invisible" />
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttomstyle"
+                    android:text="Siguiente"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
 
-                <!--Hidden Hora finalización-->
-                <EditText
-                    android:id="@+id/hora_finalizacion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name2"
-                    android:visibility="invisible" />
+                <Button
+                    android:id="@+id/sutmit"
+                    android:layout_width="560dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/buttomstyle"
+                    android:text="Siguiente"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
 
-                <!--Hidden Fecha de Difigenciamiento-->
-                <EditText
-                    android:id="@+id/fecha_diligenciamiento"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name3"
-                    android:visibility="invisible" />
+
 
 
             </LinearLayout>
-
-        </LinearLayout>
-
-        <!--  Contenedor columna Buttom-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:orientation="vertical"
-            android:layout_marginTop="700dp">
-
-            <Button
-                android:id="@+id/sutmit"
-                android:layout_width="560dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="60dp"
-                android:background="@drawable/buttomstyle"
-                android:text="Siguiente"
-                android:textColor="#ffffff"
-                android:textSize="30sp" />
 
         </LinearLayout>
 

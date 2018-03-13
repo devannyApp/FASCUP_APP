@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context="android.fascup.com.fascup.FormIIActivity">
+    tools:context="android.fascup.com.fascup.FormIIIActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -53,61 +53,71 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="600dp"
                 android:orientation="vertical">
 
-                <!--Municipio-->
+                <!--Cunatas personas habitan en su casa-->
                 <EditText
-                    android:id="@+id/nombre_municipio"
+                    android:id="@+id/hg_nro_habitantes_casa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittextstyle"
                     android:ems="10"
                     android:inputType="number"
-                    android:hint="Cuantas personas viven en su casa"
+                    android:hint="Nro personas que viven en su vivienda?"
                     android:textColor="#6b6b6b"
                     android:textSize="20sp"
                     android:layout_marginTop="30dp"
                     android:visibility="visible" />
 
-                <!--Resguardo o Cabildo-->
+                <!--Cuanto nucleos habitan en esa familia-->
+
                 <EditText
-                    android:id="@+id/nombre_resguardo"
+                    android:id="@+id/hg_nro_habitante_de_vivienda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextstyle"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Cuanto núcleos habitan en su vivienda?"
+                    android:textColor="#6b6b6b"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:text="De las personas que hacen parte de su núcleo familiar ¿Cuantos están ausentes temporalmente?"
+                    android:textColor="#77ca00"
+                    android:textSize="20sp" />
+
+                <!--Personas ausentes-->
+                <EditText
+                    android:id="@+id/hg_persona_ausentes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittextstyle"
                     android:ems="10"
                     android:inputType="textMultiLine"
-                    android:hint="Resguardo / Cabildo"
+                    android:hint="Ingrese el valor aqui"
                     android:textColor="#6b6b6b"
                     android:textSize="20sp"
                     android:layout_marginTop="30dp"
                     android:visibility="visible" />
 
-
-                <!--Vereda-->
+                <!--Número de V-->
                 <EditText
-                    android:id="@+id/nombre_vereda"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edittextstyle"
-                    android:ems="10"
-                    android:inputType="textMultiLine"
-                    android:hint="Vereda"
-                    android:textColor="#6b6b6b"
-                    android:textSize="20sp"
-                    android:layout_marginTop="30dp"
-                    android:visibility="visible" />
-
-                <!--Número de Vivienda-->
-                <EditText
-                    android:id="@+id/nro_vivienda"
+                    android:id="@+id/hg_nro_personas_comforman_nucleo_f"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/edittextstyle"
                     android:ems="10"
-                    android:hint="Nro vivienda"
+                    android:hint="Cuantas personas conforman su núcleo familiar?"
                     android:inputType="number"
                     android:textColor="#6b6b6b"
                     android:textSize="20sp"
@@ -160,6 +170,7 @@
                     android:visibility="visible" />
 
                 <!--Informante-->
+
                 <EditText
                     android:id="@+id/nombre_informante"
                     android:layout_width="match_parent"
@@ -187,16 +198,6 @@
                     android:textSize="20sp"
                     android:layout_marginTop="30dp"
                     android:visibility="visible" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginTop="30dp"
-                    android:text="Tienes otro número telefonico?"
-                    android:textColor="#77ca00"
-                    android:textSize="25sp" />
 
                 <!--Número de telefono celular2-->
                 <EditText

@@ -5,241 +5,262 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
+    android:orientation="vertical"
     tools:context="android.fascup.com.fascup.FormIIActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="30dp"
-        app:cardCornerRadius="10dp"
-        android:orientation="vertical">
-
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ingrese los siguiente datos"
-            android:textColor="#8e8e8e"
-            android:textSize="25sp" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:srcCompat="@drawable/house" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="15dp"
-                android:text="Hubicación de la vivienda"
-                android:textColor="#a1a1a1"
-                android:textSize="22sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:orientation="vertical">
-
-            <!--Municipio-->
-            <EditText
-                android:id="@+id/nombre_municipio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextstyle"
-                android:ems="10"
-                android:inputType="textMultiLine"
-                android:hint="Municipio"
-                android:textColor="#6b6b6b"
-                android:textSize="20sp"
-                android:layout_marginTop="30dp"
-                android:visibility="visible" />
-
-            <!--Resguardo o Cabildo-->
-            <EditText
-                android:id="@+id/nombre_resguardo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextstyle"
-                android:ems="10"
-                android:inputType="textMultiLine"
-                android:hint="Resguardo / Cabildo"
-                android:textColor="#6b6b6b"
-                android:textSize="20sp"
-                android:layout_marginTop="30dp"
-                android:visibility="visible" />
-
-
-            <!--Vereda-->
-            <EditText
-                android:id="@+id/nombre_vereda"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextstyle"
-                android:ems="10"
-                android:inputType="textMultiLine"
-                android:hint="Vereda"
-                android:textColor="#6b6b6b"
-                android:textSize="20sp"
-                android:layout_marginTop="30dp"
-                android:visibility="visible" />
-
-            <!--Número de Vivienda-->
-            <EditText
-                android:id="@+id/nro_vivienda"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/edittextstyle"
-                android:ems="10"
-                android:hint="Nro vivienda"
-                android:inputType="number"
-                android:textColor="#6b6b6b"
-                android:textSize="20sp"
-                android:visibility="visible" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:srcCompat="@drawable/home2" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="15dp"
-                android:text="Propietario de la vivienda"
-                android:textColor="#a1a1a1"
-                android:textSize="22sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="800dp"
-            android:orientation="vertical">
-
-            <!--Propietario-->
-            <EditText
-                android:id="@+id/nombre_propietario"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextstyle"
-                android:ems="10"
-                android:inputType="textMultiLine"
-                android:hint="Nombre del propietario"
-                android:textColor="#6b6b6b"
-                android:textSize="20sp"
-                android:layout_marginTop="30dp"
-                android:visibility="visible" />
-
-            <!--Informante-->
-            <EditText
-                android:id="@+id/nombre_informante"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextstyle"
-                android:ems="10"
-                android:inputType="textMultiLine"
-                android:hint="Nombre del informante"
-                android:textColor="#6b6b6b"
-                android:textSize="20sp"
-                android:layout_marginTop="30dp"
-                android:visibility="visible" />
-
-
-            <!--Número de telefono celular1-->
-            <EditText
-                android:id="@+id/telefono1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextstyle"
-                android:ems="10"
-                android:inputType="number"
-                android:hint="Teléfono celular"
-                android:textColor="#6b6b6b"
-                android:textSize="20sp"
-                android:layout_marginTop="30dp"
-                android:visibility="visible" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginTop="30dp"
-                android:text="Tienes otro número telefonico?"
-                android:textColor="#77ca00"
+                android:text="Ingrese los siguiente datos"
+                android:textColor="#8e8e8e"
                 android:textSize="25sp" />
 
-            <!--Número de telefono celular2-->
-            <EditText
-                android:id="@+id/telefono2"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextstyle"
-                android:ems="10"
-                android:inputType="number"
-                android:hint="Teléfono celular"
-                android:textColor="#6b6b6b"
-                android:textSize="20sp"
-                android:layout_marginTop="30dp"
-                android:visibility="visible" />
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-            <!--Detalles de Ubicación de la Vivienda-->
-            <EditText
-                android:id="@+id/detalles_hubicacion_vivienda"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextstyle"
-                android:ems="10"
-                android:inputType="textMultiLine"
-                android:hint="Detalles de la hubicación de la vivienda"
-                android:textColor="#6b6b6b"
-                android:textSize="20sp"
-                android:layout_marginTop="30dp"
-                android:visibility="visible" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/house" />
 
-            <Button
-                android:id="@+id/sutmit"
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="Hubicación de la vivienda"
+                    android:textColor="#a1a1a1"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="60dp"
-                android:background="@drawable/buttomstyle"
-                android:text="Siguiente"
-                android:textColor="#ffffff"
-                android:textSize="20sp" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="25dp"
+                    android:text="Municipio: "
+                    android:textColor="#a1a1a1"
+                    android:textSize="18sp" />
+
+                <!--Municipio-->
+                <Spinner
+                    android:id="@+id/idSpinnerMunicipio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittextstyle"
+                    android:textColor="#6b6b6b"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:text="Resguardo / Cavildo: "
+                    android:textColor="#a1a1a1"
+                    android:textSize="18sp" />
+
+                <!--Resguardo-->
+                <Spinner
+                    android:id="@+id/idSpinnerResguardo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittextstyle"
+                    android:textColor="#6b6b6b"
+                    android:textSize="30sp" />
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:text="Vereda: "
+                    android:textColor="#a1a1a1"
+                    android:textSize="18sp" />
+
+                <!--Vereda-->
+                <Spinner
+                    android:id="@+id/idSpinnerVereda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextstyle"
+                    android:textColor="#6b6b6b"
+                    android:textSize="30sp" />
+
+
+                <!--Número de Vivienda-->
+                <EditText
+                    android:id="@+id/idNroVivienda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/edittextstyle"
+                    android:ems="10"
+                    android:hint="Nro vivienda"
+                    android:inputType="number"
+                    android:textColor="#6b6b6b"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/home2" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="Propietario de la vivienda"
+                    android:textColor="#a1a1a1"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="650dp"
+                android:orientation="vertical">
+
+                <!--Propietario-->
+                <EditText
+                    android:id="@+id/idNombrePropietario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/edittextstyle"
+                    android:ems="10"
+                    android:hint="Nombre del propietario"
+                    android:inputType="textMultiLine"
+                    android:textColor="#6b6b6b"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+                <!--Informante-->
+                <EditText
+                    android:id="@+id/idNombreInformante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/edittextstyle"
+                    android:ems="10"
+                    android:hint="Nombre del informante"
+                    android:inputType="textMultiLine"
+                    android:textColor="#6b6b6b"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+
+                <!--Número de telefono celular1-->
+                <EditText
+                    android:id="@+id/idTelefono1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/edittextstyle"
+                    android:ems="10"
+                    android:hint="Teléfono celular"
+                    android:inputType="number"
+                    android:textColor="#6b6b6b"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="25dp"
+                    android:text="Tienes otro número telefonico?"
+                    android:textColor="#77ca00"
+                    android:textSize="22sp" />
+
+                <!--Número de telefono celular2-->
+                <EditText
+                    android:id="@+id/idTelefono2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/edittextstyle"
+                    android:ems="10"
+                    android:hint="Teléfono celular"
+                    android:inputType="number"
+                    android:textColor="#6b6b6b"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+                <!--Detalles de Ubicación de la Vivienda-->
+                <EditText
+                    android:id="@+id/idDetallesHubicacionVivienda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/edittextstyle"
+                    android:ems="10"
+                    android:hint="Detalles de la hubicación de la vivienda"
+                    android:inputType="textMultiLine"
+                    android:textColor="#6b6b6b"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/sutmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/buttomstyle"
+                    android:text="Siguiente"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
         </LinearLayout>
-
-
-    </LinearLayout>
 
     </ScrollView>
 </LinearLayout>

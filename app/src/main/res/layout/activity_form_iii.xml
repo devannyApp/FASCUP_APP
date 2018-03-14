@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="#fafafa"
     tools:context="android.fascup.com.fascup.FormIIIActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="25dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,12 +59,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="600dp"
+                android:layout_height="420dp"
                 android:orientation="vertical">
 
                 <!--Cunatas personas habitan en su casa-->
                 <EditText
-                    android:id="@+id/hg_nro_habitantes_casa"
+                    android:id="@+id/hv_nro_habitantes_casa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittextstyle"
@@ -73,7 +79,7 @@
                 <!--Cuanto nucleos habitan en esa familia-->
 
                 <EditText
-                    android:id="@+id/hg_nro_habitante_de_vivienda"
+                    android:id="@+id/hv_nro_habitante_de_vivienda"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittextstyle"
@@ -82,7 +88,7 @@
                     android:hint="Cuanto núcleos habitan en su vivienda?"
                     android:textColor="#6b6b6b"
                     android:textSize="20sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="25dp"
                     android:visibility="visible" />
 
                 <TextView
@@ -97,7 +103,7 @@
 
                 <!--Personas ausentes-->
                 <EditText
-                    android:id="@+id/hg_persona_ausentes"
+                    android:id="@+id/hv_persona_ausentes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittextstyle"
@@ -106,15 +112,15 @@
                     android:hint="Ingrese el valor aqui"
                     android:textColor="#6b6b6b"
                     android:textSize="20sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     android:visibility="visible" />
 
                 <!--Número de V-->
                 <EditText
-                    android:id="@+id/hg_nro_personas_comforman_nucleo_f"
+                    android:id="@+id/hv_nro_personas_comforman_nucleo_f"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/edittextstyle"
                     android:ems="10"
                     android:hint="Cuantas personas conforman su núcleo familiar?"
@@ -129,7 +135,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="110dp"
-                android:layout_marginTop="20dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -144,7 +149,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="15dp"
-                    android:text="Propietario de la vivienda"
+                    android:text="Datos de la vivienda"
                     android:textColor="#a1a1a1"
                     android:textSize="22sp" />
 
@@ -152,96 +157,85 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="800dp"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:text="Incluido la sala y el comedor ¿Cuantos cuartosen total tiene su vivienda?"
+                    android:textColor="#77ca00"
+                    android:textSize="20sp" />
 
                 <!--Propietario-->
                 <EditText
-                    android:id="@+id/nombre_propietario"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edittextstyle"
-                    android:ems="10"
-                    android:inputType="textMultiLine"
-                    android:hint="Nombre del propietario"
-                    android:textColor="#6b6b6b"
-                    android:textSize="20sp"
-                    android:layout_marginTop="30dp"
-                    android:visibility="visible" />
-
-                <!--Informante-->
-
-                <EditText
-                    android:id="@+id/nombre_informante"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edittextstyle"
-                    android:ems="10"
-                    android:inputType="textMultiLine"
-                    android:hint="Nombre del informante"
-                    android:textColor="#6b6b6b"
-                    android:textSize="20sp"
-                    android:layout_marginTop="30dp"
-                    android:visibility="visible" />
-
-
-                <!--Número de telefono celular1-->
-                <EditText
-                    android:id="@+id/telefono1"
+                    android:id="@+id/hv_nro_cuartos_en_total"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittextstyle"
                     android:ems="10"
                     android:inputType="number"
-                    android:hint="Teléfono celular"
+                    android:hint="Ingrese el valor aqui"
                     android:textColor="#6b6b6b"
                     android:textSize="20sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:visibility="visible" />
 
-                <!--Número de telefono celular2-->
+                <!---->
+
                 <EditText
-                    android:id="@+id/telefono2"
+                    android:id="@+id/hv_cuartos_para_dormir"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittextstyle"
                     android:ems="10"
                     android:inputType="number"
-                    android:hint="Teléfono celular"
+                    android:hint="Cuanto de estos cuarto usa para dormir?"
                     android:textColor="#6b6b6b"
                     android:textSize="20sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     android:visibility="visible" />
 
-                <!--Detalles de Ubicación de la Vivienda-->
+
+                <!---->
                 <EditText
-                    android:id="@+id/detalles_hubicacion_vivienda"
+                    android:id="@+id/hv_tendencia_vivienda"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittextstyle"
                     android:ems="10"
                     android:inputType="textMultiLine"
-                    android:hint="Detalles de la hubicación de la vivienda"
+                    android:hint="Cuál es la forma de tendencia de la vivienda?"
                     android:textColor="#6b6b6b"
                     android:textSize="20sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     android:visibility="visible" />
 
-                <Button
-                    android:id="@+id/sutmit"
+
+
+                <!---->
+                <EditText
+                    android:id="@+id/hv"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="60dp"
-                    android:background="@drawable/buttomstyle"
-                    android:text="Siguiente"
-                    android:textColor="#ffffff"
-                    android:textSize="20sp" />
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextstyle"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:hint="Cuál es el material principal de las paredes?"
+                    android:textColor="#6b6b6b"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="visible" />
+
+
             </LinearLayout>
-
 
         </LinearLayout>
 
+        </android.support.v7.widget.CardView>
 
 
     </ScrollView>

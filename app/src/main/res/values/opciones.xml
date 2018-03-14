@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="combo_municipio">
+
+        <item>Santander de Q</item>
+        <item>Caloto</item>
+        <item>Miranda</item>
+        <item>Corinto</item>
+        <item>Mondomo</item>
+
+    </string-array>
+
+
+    <string-array name="combo_resguardo">
+
+        <item>Canoas</item>
+        <item>Muchique</item>
+        <item>Caloto</item>
+        <item>Mondomo</item>
+        <item>Los tigres</item>
+
+    </string-array>
+
+    <string-array name="combo_vereda">
+
+        <item>San pedro</item>
+        <item>Vilachi</item>
+        <item>La palomera</item>
+        <item>El condor</item>
+        <item>El turco</item>
+
+    </string-array>
+
+
+
+</resources>

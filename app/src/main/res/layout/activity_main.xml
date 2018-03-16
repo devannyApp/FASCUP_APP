@@ -5,179 +5,564 @@
     android:id="@+id/ll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grisfondo"
+    android:background="#eeeeee"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context="android.fascup.com.fascup.MainActivity">
 
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clipToPadding="false"
-        android:gravity="left"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <!-- Formulario I-->
-        <android.support.v7.widget.CardView
-            android:id="@+id/CardViewForm_I"
-            android:layout_width="160dp"
-            android:layout_height="190dp"
-            android:layout_margin="10dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground">
-
-
+            <!--CONTENEDOR 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
                 android:gravity="center"
-                android:orientation="vertical"
-                >
+                android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/home2"
-                    android:padding="10dp"
-                    />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/grisclaro" />
+                <!-- Formulario I-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardViewForm_I"
+                    android:layout_width="190dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="30dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="91dp"
-                    android:background="@color/grisoscuro"
-                    android:gravity="center"
-                    android:orientation="vertical">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                        android:text="Identificación del formulario"
-                        android:textAlignment="center"
-                        android:textColor="@color/blancoletra"
-                        android:textStyle="bold" />
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/usuariomenu"
+                            android:padding="10dp" />
 
-                </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/layoutmenuredondeado"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Identificación formulario"
+                                android:textAlignment="center"
+                                android:textColor="@color/blancoletra"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Formulario II-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardViewForm_II"
+                    android:layout_width="190dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="30dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/viviendamenu"
+                            android:padding="10dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/layoutmenuredondeado"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+
+                                android:text="Características hogar y vivienda"
+                                android:textAlignment="center"
+                                android:textColor="@color/blancoletra"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
 
 
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <!-- Formulario II-->
-        <android.support.v7.widget.CardView
-            android:id="@+id/CardViewForm_II"
-            android:layout_width="160dp"
-            android:layout_height="190dp"
-            android:layout_margin="10dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground">
 
 
+            <!--CONTENEDOR 2-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
                 android:gravity="center"
-                android:orientation="vertical"
-                >
+                android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/house"
-                    android:padding="10dp"
-                    />
+                <!-- Formulario III-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardViewForm_III"
+                    android:layout_width="190dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="30dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/grisclaro" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="91dp"
-                    android:background="@color/grisoscuro"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                        android:text="Identificación de vivienda"
-                        android:textAlignment="center"
-                        android:textColor="@color/blancoletra"
-                        android:textStyle="bold" />
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/actividadeconomica1"
+                            android:padding="10dp" />
 
-                </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/layoutmenuredondeado"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+
+                                android:text="Actividad economica"
+                                android:textAlignment="center"
+                                android:textColor="@color/blancoletra"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
 
 
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <!-- Formulario IV-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardViewForm_IV"
+                    android:layout_width="190dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="30dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/grupofamiliar"
+                            android:padding="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/layoutmenuredondeado"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Grupo familiar"
+                                android:textAlignment="center"
+                                android:textColor="@color/blancoletra"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <!-- Formulario III-->
-        <android.support.v7.widget.CardView
-            android:id="@+id/CardViewForm_III"
-            android:layout_width="160dp"
-            android:layout_height="190dp"
-            android:layout_margin="10dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground">
 
 
+
+            <!--CONTENEDOR 3 -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
                 android:gravity="center"
-                android:orientation="vertical"
-               >
+                android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/datos_vivienda"
-                    android:padding="10dp"
-                    />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/grisclaro" />
+                <!-- Formulario V-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardViewForm_V"
+                    android:layout_width="190dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="30dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="91dp"
-                    android:background="@color/grisoscuro"
-                    android:gravity="center"
-                    android:orientation="vertical">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                        android:text="Hogar y vivienda"
-                        android:textAlignment="center"
-                        android:textColor="@color/blancoletra"
-                        android:textStyle="bold" />
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/lote1"
+                            android:padding="10dp" />
 
-                </LinearLayout>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/layoutmenuredondeado"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Lote"
+                                android:textAlignment="center"
+                                android:textColor="@color/blancoletra"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <!-- Formulario VI-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardViewForm_VI"
+                    android:layout_width="190dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="30dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/sendero"
+                            android:padding="10dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/layoutmenuredondeado"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Senderos  ecológicos"
+                                android:textAlignment="center"
+                                android:textColor="@color/blancoletra"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
 
             </LinearLayout>
-        </android.support.v7.widget.CardView>
 
-    </LinearLayout>
 
-    </LinearLayout>
+            <!-- CONTENEDOR 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <!-- Formulario V-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardViewForm_V"
+                    android:layout_width="190dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="30dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/lote1"
+                            android:padding="10dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/layoutmenuredondeadoverde"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+
+                                android:text="Lote"
+                                android:textAlignment="center"
+                                android:textColor="@color/blancoletra"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <!-- Formulario VI-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardViewForm_VI"
+                    android:layout_width="190dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="30dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/sendero"
+                            android:padding="10dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/layoutmenuredondeadooscuro"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Senderos  ecológicos"
+                                android:textAlignment="center"
+                                android:textColor="@color/blancoletra"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <!-- CONTENEDOR 5 -->
+            <!-- CONTENEDOR 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <!-- Formulario V-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardViewForm_V"
+                    android:layout_width="190dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="30dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/lote1"
+                            android:padding="10dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/layoutmenuredondeadoverde"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+
+                                android:text="Lote"
+                                android:textAlignment="center"
+                                android:textColor="@color/blancoletra"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <!-- Formulario VI-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardViewForm_VI"
+                    android:layout_width="190dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="30dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/sendero"
+                            android:padding="10dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/layoutmenuredondeadoverde"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Senderos  ecológicos"
+                                android:textAlignment="center"
+                                android:textColor="@color/blancoletra"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -9,236 +9,1230 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-        <android.support.v7.widget.CardView
-            android:layout_margin="25dp"
-            app:cardCornerRadius="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="30dp"
-            app:cardCornerRadius="10dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
 
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hogar y vivienda"
-                android:textColor="#8e8e8e"
-                android:textSize="25sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
                 android:layout_marginTop="20dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/familia" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="15dp"
-                    android:text="Datos familiares"
-                    android:textColor="#a1a1a1"
-                    android:textSize="22sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="420dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/headertitulo"
                 android:orientation="vertical">
 
-                <!--Cunatas personas habitan en su casa-->
-                <EditText
-                    android:id="@+id/hv_nro_habitantes_casa"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edittextstyle"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:hint="Nro personas que viven en su vivienda?"
-                    android:textColor="#6b6b6b"
-                    android:textSize="20sp"
-                    android:layout_marginTop="30dp"
-                    android:visibility="visible" />
-
-                <!--Cuanto nucleos habitan en esa familia-->
-
-                <EditText
-                    android:id="@+id/hv_nro_habitante_de_vivienda"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edittextstyle"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:hint="Cuanto núcleos habitan en su vivienda?"
-                    android:textColor="#6b6b6b"
-                    android:textSize="20sp"
-                    android:layout_marginTop="25dp"
-                    android:visibility="visible" />
-
                 <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginTop="20dp"
-                    android:text="De las personas que hacen parte de su núcleo familiar ¿Cuantos están ausentes temporalmente?"
-                    android:textColor="#77ca00"
-                    android:textSize="20sp" />
-
-                <!--Personas ausentes-->
-                <EditText
-                    android:id="@+id/hv_persona_ausentes"
+                    android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/edittextstyle"
-                    android:ems="10"
-                    android:inputType="textMultiLine"
-                    android:hint="Ingrese el valor aqui"
-                    android:textColor="#6b6b6b"
-                    android:textSize="20sp"
-                    android:layout_marginTop="20dp"
-                    android:visibility="visible" />
-
-                <!--Número de V-->
-                <EditText
-                    android:id="@+id/hv_nro_personas_comforman_nucleo_f"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/edittextstyle"
-                    android:ems="10"
-                    android:hint="Cuantas personas conforman su núcleo familiar?"
-                    android:inputType="number"
-                    android:textColor="#6b6b6b"
-                    android:textSize="20sp"
-                    android:visibility="visible" />
-
-
+                    android:text="Hogar"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="110dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/home2" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="15dp"
-                    android:text="Datos de la vivienda"
-                    android:textColor="#a1a1a1"
-                    android:textSize="22sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/house" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#a1a1a1"
+                            android:textSize="18sp"
+                            android:text="Caracteristicas generales del hogar" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="1. Nro personas que viven en su vivienda:"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/hv_nro_habitantes_casa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:hint="1"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp"
+                            android:layout_marginTop="10dp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="2. Cuanto núcleos habitan en su vivienda:"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/hv_nro_habitante_de_vivienda"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:hint="2"
+                            android:textColor="#6b6b6b"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="3. De las personas que hacen parte de su núcleo familiar ¿Cuantos están ausentes temporalmente?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/hv_persona_ausentes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:hint="3"
+                            android:textColor="#6b6b6b"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="4. Cuantas personas conforman su núcleo familiar:"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/hv_nro_personas_comforman_nucleo_f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:hint="4"
+                            android:inputType="number"
+                            android:textColor="#6b6b6b"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/headertitulo"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginTop="20dp"
-                    android:text="Incluido la sala y el comedor ¿Cuantos cuartosen total tiene su vivienda?"
-                    android:textColor="#77ca00"
-                    android:textSize="20sp" />
-
-                <!--Propietario-->
-                <EditText
-                    android:id="@+id/hv_nro_cuartos_en_total"
+                    android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/edittextstyle"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:hint="Ingrese el valor aqui"
-                    android:textColor="#6b6b6b"
-                    android:textSize="20sp"
-                    android:layout_marginTop="10dp"
-                    android:visibility="visible" />
-
-                <!---->
-
-                <EditText
-                    android:id="@+id/hv_cuartos_para_dormir"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edittextstyle"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:hint="Cuanto de estos cuarto usa para dormir?"
-                    android:textColor="#6b6b6b"
-                    android:textSize="20sp"
-                    android:layout_marginTop="20dp"
-                    android:visibility="visible" />
-
-
-                <!---->
-                <EditText
-                    android:id="@+id/hv_tendencia_vivienda"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edittextstyle"
-                    android:ems="10"
-                    android:inputType="textMultiLine"
-                    android:hint="Cuál es la forma de tendencia de la vivienda?"
-                    android:textColor="#6b6b6b"
-                    android:textSize="20sp"
-                    android:layout_marginTop="20dp"
-                    android:visibility="visible" />
-
-
-
-                <!---->
-                <EditText
-                    android:id="@+id/hv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edittextstyle"
-                    android:ems="10"
-                    android:inputType="textMultiLine"
-                    android:hint="Cuál es el material principal de las paredes?"
-                    android:textColor="#6b6b6b"
-                    android:textSize="20sp"
-                    android:layout_marginTop="20dp"
-                    android:visibility="visible" />
-
-
+                    android:text="Vivienda"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/house" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#a1a1a1"
+                            android:textSize="18sp"
+                            android:text="Caracteristicas generales de la vivienda" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <!-- Pregunta 5 -->
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="5. Incluidos la sala y comedor ¿Cuantos cuartos en total tiene esta vivienda?:"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/hv_nro_habitantes_casa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:hint="5"
+                            android:textColor="#6b6b6b"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:visibility="visible" />
+
+
+                        <!-- Pregunta 6 -->
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="6. Cuantos de estos cuartos usa para dormir?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/nro_cuartos_vivienda"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:hint=""
+                            android:textColor="#6b6b6b"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:visibility="visible" />
+
+
+                        <!-- Pregunta 7 -->
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="7. Cuál es la forma de tendencia de la vivienda:"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerTendenciaVivienda"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+                        <!-- Pregunta 8 -->
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="8. Cuál es el material pricipal de las paredes:"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerMaterialParedes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+                        <!-- Pregunta 9 -->
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="9. ¿Cuál es el material principal de los techos?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerMaterialTechos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+
+                        <!-- Pregunta 10 -->
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="10. ¿Cuál es el material principal de los pisos?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerMaterialPisos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+
+                        <!-- Pregunta 11 -->
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="11. ¿La vivienda cuenta con los siguientes servicios básicos?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxEnergiaElectrica"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Energia eléctrica"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxTelevisorPorCable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Televisor por cable/satelital"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxAlcantarillado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alcantarillado"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxRecoleccionBasuras"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Recolección de basuras"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxAcueducto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Acueducto (Planta de tratamiento)"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/headertitulo"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agua"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/house" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#a1a1a1"
+                            android:textSize="18sp"
+                            android:text="Caracteristicas generales del consumo del agua" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <!-- Pregunta 12 -->
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="12. ¿De donde toma el agua para el consumo?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerAguaConsumo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+
+                        <!-- Pregunta 13 -->
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="13. ¿Como llega el agua para el consumo?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerLlegaAguaConsumo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+                        <!-- Pregunta 14 -->
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="14. ¿Como alamcena el agua para el consumo?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerAguaParaConsumo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+
+                        <!-- Pregunta 15 -->
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="15. ¿Como alamcena el agua para el consumo?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerAguaDesperdicie"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+
+
+
+                        <!-- Pregunta 16 -->
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="16. ¿En esta vivienda hierven agua para tomar?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerHierveAgua"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+
+                        <!-- Pregunta 17 -->
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="17. ¿Cuál es el lugar de preparación de los alimentos?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerPreparacionAlimentos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/headertitulo"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cosina"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/house" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#a1a1a1"
+                            android:textSize="18sp"
+                            android:text="Caracteristicas generales cosina y alimentos" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+
+                        <!-- Pregunta 18 -->
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="18. La cosina es de uso"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerCosinaUso"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+
+
+                        <!-- Pregunta 19 -->
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="19. ¿Con qué cosinan los alimentos?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxGas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gas"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxLeña"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Leña"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxEnergiaElectrica"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Energía eléctrica"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxOtro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Otro"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+
+                        <!-- Pregunta 20 -->
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="20. El alumbrado en la vivienda es con:"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerAlumbradoVivienda"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/headertitulo"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sanitario"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/house" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#a1a1a1"
+                            android:textSize="18sp"
+                            android:text="Caracterisiticas sanitarias" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+
+                        <!-- Pregunta 21 -->
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="21. El servicio sanitario es:"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerServicioSanitarioEs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+
+                        <!-- Pregunta 22 -->
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="22. El tipo de servicio sanitario es:"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerTipoServicioSanitarioEs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+
+                        <!-- Pregunta 23 -->
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="23. ¿En donde esta hubicado el servicio sanitario?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerHubicadoServicioSanitario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/headertitulo"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Basura"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/house" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#a1a1a1"
+                            android:textSize="18sp"
+                            android:text="Recoleccion de basuras" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+
+                        <!-- Pregunta 24 -->
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="24. ¿Cuál es la forma principal como eliminan las basuras?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerEliminanBasuras"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/headertitulo"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vivienda y agua"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/house" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#a1a1a1"
+                            android:textSize="18sp"
+                            android:text="Caracteristicas de vivienda y aguas" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+
+                        <!-- Pregunta 25 -->
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="25. Su vivienda esta serca de:"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxOjoAgua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ojo Agua"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxQuebrada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quebrada"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxRio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rio"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxCienaga"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ciénaga"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxHumedal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Humedal"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxLaguna"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Laguna"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxNinguno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ninguno"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+
+
+                        <!-- Pregunta 26 -->
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="26. En donde vierten las aguas domésticas (Sanitarios, lavaplatos y lavaderos)"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerViertenAguasDomestica"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+
+                        <!-- Pregunta 27 -->
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="27. ¿En donde vierten las aguas servidas (Origen agropecuario) ? "
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerViertenAguasDomesticaServidas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+            <Button
+                android:id="@+id/idSubmitForm3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttomstyle"
+                android:text="Guardar"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:onClick="onClick"/>
+
         </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-
     </ScrollView>
-
 
 </LinearLayout>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--Formulario II-->
+
     <string-array name="combo_municipio">
 
         <item>Santander de Q</item>
@@ -33,5 +35,185 @@
     </string-array>
 
 
+    <!-- FORMULARIO III -->
+
+    <!--Pregunta 7 -->
+    <string-array name="combo_tendencia_vivienda">
+        <item>Propia</item>
+        <item>Arriendo</item>
+        <item>Casa familiar</item>
+        <item>Posada</item>
+        <item>Compartida</item>
+        <item>Prestada / cuidandero</item>
+    </string-array>
+
+
+    <!--Pregunta 8 -->
+    <string-array name="combo_material_paredes">
+        <item>Ladrillo</item>
+        <item>Ladrillo con repello</item>
+        <item>Bloque</item>
+        <item>Ladrillo y bloque</item>
+        <item>Ladrillo y bloque con repello</item>
+        <item>Bahareque</item>
+        <item>Bahareque con repello</item>
+        <item>Madera burda, tabla o tablon</item>
+        <item>Guadua, caña, esterilla u otro vegetal</item>
+        <item>Zinc, tela, lona</item>
+    </string-array>
+
+
+    <!--Pregunta 9 -->
+    <string-array name="combo_material_techos">
+        <item>Tela</item>
+        <item>Eternit</item>
+        <item>Zinc</item>
+        <item>Paja</item>
+        <item>Cartón</item>
+        <item>Plancha cemento</item>
+        <item>Cabuya</item>
+        <item>Guadua</item>
+        <item>Plástico</item>
+    </string-array>
+
+
+    <!--Pregunta 10 -->
+    <string-array name="combo_material_pisos">
+        <item>Tierra</item>
+        <item>Cemento</item>
+        <item>Bladosa</item>
+        <item>Ladrillo</item>
+        <item>Tabla o madera</item>
+        <item>Cerámica</item>
+        <item>Mármol</item>
+        <item>Guadua</item>
+    </string-array>
+
+
+    <!--Pregunta 12 -->
+    <string-array name="combo_agua_consumo">
+        <item>Red de distribución / Bocatoma veredal</item>
+        <item>Ojod de agua</item>
+        <item>Quebrada</item>
+        <item>Rio</item>
+        <item>Agua de lluvia</item>
+        <item>Aljibe</item>
+    </string-array>
+
+
+    <!--Pregunta 13 -->
+    <string-array name="combo_llega_agua_consumo">
+        <item>Canal de gaudaua</item>
+        <item>Mangera</item>
+        <item>Quebrada</item>
+        <item>Rio</item>
+        <item>Agua de lluvia</item>
+        <item>Aljibe</item>
+    </string-array>
+
+
+    <!--Pregunta 14 -->
+    <string-array name="combo_agua_para_consumo">
+        <item>Tanques</item>
+        <item>Galones</item>
+        <item>Todas las anteriores</item>
+        <item>Canecas</item>
+        <item>Ollas</item>
+        <item>Otro</item>
+    </string-array>
+
+
+    <!--Pregunta 15 -->
+    <string-array name="combo_agua_desperdicie">
+        <item>Utilizan llave</item>
+        <item>No utilizan llave</item>
+        <item>Otro</item>
+    </string-array>
+
+
+    <!--Pregunta 16 -->
+    <string-array name="combo_hierve_agua">
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+
+
+    <!--Pregunta 17 -->
+    <string-array name="combo_preparacion_alimentos">
+        <item>Cosina o cuarto destinado exclusivamente para preparar alimentos</item>
+        <item>Cuarto usado tambien para dormir</item>
+        <item>Sala comedor con lavaplatos</item>
+        <item>Sala comedor sin lavaplatos</item>
+        <item>Patio, comedor, enramada, al aire libre</item>
+    </string-array>
+
+    <!--Pregunta 18 -->
+    <string-array name="combo_cosina_uso">
+        <item>Exclusivo de las personas de la familia</item>
+        <item>Compartida</item>
+    </string-array>
+
+
+    <!--Pregunta 20 -->
+    <string-array name="combo_alumbrado_vivienda">
+        <item>Energia eléctrica (C.E.O)</item>
+        <item>Energia propia (Pelton o paneles)</item>
+        <item>Velas</item>
+        <item>Mechero/petroleo</item>
+    </string-array>
+
+
+    <!--Pregunta 21 -->
+    <string-array name="combo_servicio_sanitario_es">
+        <item>Exclusivo de la personas de la familia</item>
+        <item>Compartida</item>
+    </string-array>
+
+
+    <!--Pregunta 22 -->
+    <string-array name="combo_tipo_servicio_sanitario">
+        <item>Inodoro conectada al alcantarillado</item>
+        <item>Inodoro conectada al pozo séptico</item>
+        <item>Letrina</item>
+        <item>No tiene servicio sanitario (PASE A PREG. 24)</item>
+    </string-array>
+
+
+    <!--Pregunta 23 -->
+    <string-array name="combo_hubicado_servicio_sanitario">
+        <item>Dentro de la vivienda</item>
+        <item>Fuera de la vivienda en lote o terreno</item>
+    </string-array>
+
+
+    <!--Pregunta 24 -->
+    <string-array name="combo_eliminan_basuras">
+        <item>La recogen los servicios de Aseo</item>
+        <item>Latiran a un rio, quebrada caño o laguna</item>
+        <item>La tiran a un lote, patio zanja o baldlo</item>
+        <item>La queman y/o la entierran</item>
+        <item>La recoge un servicio informal</item>
+        <item>Se separa y/o recicla</item>
+    </string-array>
+
+
+    <!--Pregunta 26 -->
+    <string-array name="combo_vierten_aguas_domestica">
+        <item>Campo habierto</item>
+        <item>Pozo séptico</item>
+        <item>Quebrada</item>
+        <item>Rio</item>
+        <item>Alcanrillado (PTAR)</item>
+    </string-array>
+
+    <!--Pregunta 27 -->
+    <string-array name="combo_vierten_aguas_domestica_servidas">
+        <item>Planta de tratamiento</item>
+        <item>Campos abiertos</item>
+        <item>Lagunas de oxidación (Pozo séptico)</item>
+        <item>No aplica</item>
+    </string-array>
 
 </resources>
+

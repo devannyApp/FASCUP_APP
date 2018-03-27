@@ -25,46 +25,19 @@ public class FormIIActivity extends AppCompatActivity {
         //Definimos Spinner municipio
         comboMunicipio = findViewById(R.id.idSpinnerMunicipio);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.combo_municipio,android.R.layout.simple_spinner_item);
-
         comboMunicipio.setAdapter(adapter);
-        comboMunicipio.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
-        {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
-            {
-                Toast.makeText(parent.getContext(), "Seleccionado: "+parent.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?>parent){
-
-            }
-        });
 
 
         //Definimos Spinner Reguardo
         comboReguardo = findViewById(R.id.idSpinnerResguardo);
         ArrayAdapter<CharSequence> adapterR = ArrayAdapter.createFromResource(this,R.array.combo_resguardo,android.R.layout.simple_spinner_item);
-
         comboReguardo.setAdapter(adapterR);
-        comboReguardo.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
-        {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
-            {
-                Toast.makeText(parent.getContext(), "Seleccionado: "+parent.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?>parent){
-
-            }
-        });
 
         //Definimos Spinner Vereda
         comboVereda = findViewById(R.id.idSpinnerVereda);
         ArrayAdapter<CharSequence> adapterV = ArrayAdapter.createFromResource(this,R.array.combo_vereda,android.R.layout.simple_spinner_item);
-
         comboVereda.setAdapter(adapterV);
-        comboVereda.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
+        /*comboVereda.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
         {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
@@ -75,7 +48,7 @@ public class FormIIActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?>parent){
 
             }
-        });
+        });*/
 
 
         //Muestra el boton para volver

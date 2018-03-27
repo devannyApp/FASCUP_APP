@@ -39,6 +39,7 @@
 
     <!--Pregunta 7 -->
     <string-array name="combo_tendencia_vivienda">
+        <item>Seleccione</item>
         <item>Propia</item>
         <item>Arriendo</item>
         <item>Casa familiar</item>
@@ -50,6 +51,7 @@
 
     <!--Pregunta 8 -->
     <string-array name="combo_material_paredes">
+        <item>Seleccione</item>
         <item>Ladrillo</item>
         <item>Ladrillo con repello</item>
         <item>Bloque</item>
@@ -65,6 +67,7 @@
 
     <!--Pregunta 9 -->
     <string-array name="combo_material_techos">
+        <item>Seleccione</item>
         <item>Tela</item>
         <item>Eternit</item>
         <item>Zinc</item>
@@ -79,6 +82,7 @@
 
     <!--Pregunta 10 -->
     <string-array name="combo_material_pisos">
+        <item>Seleccione</item>
         <item>Tierra</item>
         <item>Cemento</item>
         <item>Bladosa</item>
@@ -92,6 +96,7 @@
 
     <!--Pregunta 12 -->
     <string-array name="combo_agua_consumo">
+        <item>Seleccione</item>
         <item>Red de distribución / Bocatoma veredal</item>
         <item>Ojod de agua</item>
         <item>Quebrada</item>
@@ -103,6 +108,7 @@
 
     <!--Pregunta 13 -->
     <string-array name="combo_llega_agua_consumo">
+        <item>Seleccione</item>
         <item>Canal de gaudaua</item>
         <item>Mangera</item>
         <item>Quebrada</item>
@@ -114,17 +120,19 @@
 
     <!--Pregunta 14 -->
     <string-array name="combo_agua_para_consumo">
+        <item>Seleccione</item>
         <item>Tanques</item>
         <item>Galones</item>
-        <item>Todas las anteriores</item>
         <item>Canecas</item>
         <item>Ollas</item>
+        <item>Todas las anteriores</item>
         <item>Otro</item>
     </string-array>
 
 
     <!--Pregunta 15 -->
     <string-array name="combo_agua_desperdicie">
+        <item>Seleccione</item>
         <item>Utilizan llave</item>
         <item>No utilizan llave</item>
         <item>Otro</item>
@@ -133,6 +141,7 @@
 
     <!--Pregunta 16 -->
     <string-array name="combo_hierve_agua">
+        <item>Seleccione</item>
         <item>Si</item>
         <item>No</item>
     </string-array>
@@ -141,6 +150,7 @@
 
     <!--Pregunta 17 -->
     <string-array name="combo_preparacion_alimentos">
+        <item>Seleccione</item>
         <item>Cosina o cuarto destinado exclusivamente para preparar alimentos</item>
         <item>Cuarto usado tambien para dormir</item>
         <item>Sala comedor con lavaplatos</item>
@@ -150,6 +160,7 @@
 
     <!--Pregunta 18 -->
     <string-array name="combo_cosina_uso">
+        <item>Seleccione</item>
         <item>Exclusivo de las personas de la familia</item>
         <item>Compartida</item>
     </string-array>
@@ -157,6 +168,7 @@
 
     <!--Pregunta 20 -->
     <string-array name="combo_alumbrado_vivienda">
+        <item>Seleccione</item>
         <item>Energia eléctrica (C.E.O)</item>
         <item>Energia propia (Pelton o paneles)</item>
         <item>Velas</item>
@@ -166,6 +178,7 @@
 
     <!--Pregunta 21 -->
     <string-array name="combo_servicio_sanitario_es">
+        <item>Seleccione</item>
         <item>Exclusivo de la personas de la familia</item>
         <item>Compartida</item>
     </string-array>
@@ -173,6 +186,7 @@
 
     <!--Pregunta 22 -->
     <string-array name="combo_tipo_servicio_sanitario">
+        <item>Seleccione</item>
         <item>Inodoro conectada al alcantarillado</item>
         <item>Inodoro conectada al pozo séptico</item>
         <item>Letrina</item>
@@ -182,6 +196,7 @@
 
     <!--Pregunta 23 -->
     <string-array name="combo_hubicado_servicio_sanitario">
+        <item>Seleccione</item>
         <item>Dentro de la vivienda</item>
         <item>Fuera de la vivienda en lote o terreno</item>
     </string-array>
@@ -189,6 +204,7 @@
 
     <!--Pregunta 24 -->
     <string-array name="combo_eliminan_basuras">
+        <item>Seleccione</item>
         <item>La recogen los servicios de Aseo</item>
         <item>Latiran a un rio, quebrada caño o laguna</item>
         <item>La tiran a un lote, patio zanja o baldlo</item>
@@ -200,6 +216,7 @@
 
     <!--Pregunta 26 -->
     <string-array name="combo_vierten_aguas_domestica">
+        <item>Seleccione</item>
         <item>Campo habierto</item>
         <item>Pozo séptico</item>
         <item>Quebrada</item>
@@ -209,6 +226,7 @@
 
     <!--Pregunta 27 -->
     <string-array name="combo_vierten_aguas_domestica_servidas">
+        <item>Seleccione</item>
         <item>Planta de tratamiento</item>
         <item>Campos abiertos</item>
         <item>Lagunas de oxidación (Pozo séptico)</item>

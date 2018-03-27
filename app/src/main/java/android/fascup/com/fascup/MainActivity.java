@@ -16,8 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     //Varibles del menu
-    private CardView CardViewForm_I, CardViewForm_II, CardViewForm_III;   //Declaraciones de varibales para botones
-    Button BtnFormI;
+    private CardView CardViewForm_I, CardViewForm_II, CardViewForm_III, CardViewForm_IV;   //Declaraciones de varibales para botones
 
 
     //METODO
@@ -26,32 +25,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         //Definición de Cards
         CardViewForm_I = (CardView) findViewById(R.id.CardViewForm_I);
         CardViewForm_II = (CardView) findViewById(R.id.CardViewForm_II);
         CardViewForm_III = (CardView) findViewById(R.id.CardViewForm_III);
-
+        CardViewForm_IV = (CardView) findViewById(R.id.CardViewForm_IV);
 
         //Agregar Click listenrer a los CardsView de Formulario
         CardViewForm_I.setOnClickListener(this);
         CardViewForm_II.setOnClickListener(this);
         CardViewForm_III.setOnClickListener(this);
-
-
-
+        CardViewForm_IV.setOnClickListener(this);
     }
-
 
     //Metdo cuando se presiona para abrir un formulario
     @Override
     public void onClick(View v) {
         Intent i;
+
         switch (v.getId()){
-           case R.id.CardViewForm_I: i = new Intent(this,FormIActivity.class);startActivity(i);
-           case R.id.CardViewForm_II: i = new Intent(this,FormIIActivity.class);startActivity(i);
-
-
+           case R.id.CardViewForm_I: i = new Intent(this,FormIActivity.class);startActivity(i); break;
+           case R.id.CardViewForm_II: i = new Intent(this,FormIIActivity.class);startActivity(i); break;
+           case R.id.CardViewForm_III: i = new Intent(this,FormIIIActivity.class);startActivity(i); break;
+            case R.id.CardViewForm_IV: i = new Intent(this,FormIVActivity.class);startActivity(i); break;
            default:break;
 
         }

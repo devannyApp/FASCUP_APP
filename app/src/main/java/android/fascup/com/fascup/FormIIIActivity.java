@@ -1,8 +1,8 @@
 package android.fascup.com.fascup;
 
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -10,12 +10,7 @@ import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-/**
- * Created by GIOVANNY on 13/03/2018.
- */
-
 public class FormIIIActivity extends AppCompatActivity {
-
 
     //Variables del Spinner
     Spinner comboTendenciaVivienda; //Pregunta 7
@@ -39,11 +34,10 @@ public class FormIIIActivity extends AppCompatActivity {
 
     //Variables CheckBox
     CheckBox CheckboxEnergiaElectrica, CheckboxTelevisorPorCable, CheckboxAlcantarillado,
-             CheckboxRecoleccionBasuras, CheckboxAcueducto, CheckboxGas, CheckboxLeña,
-             CheckboxEnergia, CheckBoxOtro, CheckboxOjoAgua, CheckboxQuebrada, CheckboxRio, CheckboxCienaga, CheckboxHumedal,
-             CheckboxLaguna, CheckboxNinguno;
+            CheckboxRecoleccionBasuras, CheckboxAcueducto, CheckboxGas, CheckboxLeña,
+            CheckboxEnergia, CheckBoxOtro, CheckboxOjoAgua, CheckboxQuebrada, CheckboxRio, CheckboxCienaga, CheckboxHumedal,
+            CheckboxLaguna, CheckboxNinguno;
 
-    //METODO PRINCIPAL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -208,18 +202,14 @@ public class FormIIIActivity extends AppCompatActivity {
         CheckboxLaguna  = (CheckBox) findViewById(R.id.idCheckboxLaguna);
         CheckboxNinguno  = (CheckBox) findViewById(R.id.idCheckboxNinguno);
 
-
         //Muestra el boton para volver
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
-
     //METODO CheckBox
     public void onclick(View view){
-
         if(view.getId()==R.id.idSubmitForm3){
-
             validarServiciosBasicos();
             validarCosinanAlimentos();
             validarViviendaCerca();
@@ -277,7 +267,6 @@ public class FormIIIActivity extends AppCompatActivity {
 
     }
 
-
     //METODO PARA VALIDAR vivienda cerca CheckBox
     private void validarViviendaCerca(){
 
@@ -311,6 +300,7 @@ public class FormIIIActivity extends AppCompatActivity {
 
         }
     }
+
 
     //Cierra la actividad al presionar el boton...
     @Override

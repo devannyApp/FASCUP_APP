@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="#fff"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
 
 
     <LinearLayout
@@ -22,20 +22,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="420dp"
         android:orientation="vertical">
 
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
+            android:layout_width="250sp"
             android:layout_height="wrap_content"
-            android:text="Fascup"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:textSize="40sp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="30dp"
+            android:layout_marginHorizontal="200sp"
+            android:text="Iniciar sección"
+            android:textColor="#797b7a"
+            android:textSize="30sp"/>
 
         <EditText
             android:id="@+id/idNombrePropietario"
@@ -43,11 +42,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:background="@drawable/edittextstyle"
+            android:background="@drawable/inputprimaryblanco"
             android:ems="10"
             android:hint="Usuario"
             android:inputType="textMultiLine"
             android:textColor="#6b6b6b"
+            android:textColorLink="@color/colorPrimary"
             android:textSize="16sp"
             android:visibility="visible" />
 
@@ -56,14 +56,15 @@
             android:id="@+id/idNombrePropietario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:background="@drawable/edittextstyle"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/inputprimaryblanco"
             android:ems="10"
             android:hint="Pasword"
             android:inputType="textPassword"
             android:textColor="#6b6b6b"
+            android:textColorLink="@color/colorPrimaryDark"
             android:textSize="16sp"
             android:visibility="visible" />
 
@@ -75,11 +76,10 @@
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:layout_marginTop="20dp"
-
             android:background="@drawable/buttomstyle"
-            android:text="Guardar"
+            android:text="Continuar"
             android:textColor="#ffffff"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
 </RelativeLayout>

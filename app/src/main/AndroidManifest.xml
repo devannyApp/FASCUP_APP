@@ -50,7 +50,8 @@
 
         </activity>
         <activity android:name=".FormIVActivity" />
-        <activity android:name=".FormIIIActivity"></activity>
+        <activity android:name=".FormIIIActivity" />
+        <activity android:name=".FormMenuActivity"></activity>
     </application>
 
 </manifest>

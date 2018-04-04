@@ -49,7 +49,7 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_margin="10dp"
-                            android:background="@drawable/usuariomenu"
+                            android:background="@drawable/logo_formulario1"
                             android:padding="10dp" />
 
                         <LinearLayout
@@ -66,7 +66,7 @@
                                 android:text="Identificación formulario"
                                 android:textAlignment="center"
                                 android:textColor="@color/blancoletra"
-                                android:textSize="13sp"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
@@ -115,7 +115,7 @@
                                 android:text="Características hogar y vivienda"
                                 android:textAlignment="center"
                                 android:textColor="@color/blancoletra"
-                                android:textSize="13sp"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
@@ -176,7 +176,7 @@
                                 android:text="Actividad economica"
                                 android:textAlignment="center"
                                 android:textColor="@color/blancoletra"
-                                android:textSize="13sp"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
@@ -223,7 +223,7 @@
                                 android:text="Grupo familiar"
                                 android:textAlignment="center"
                                 android:textColor="@color/blancoletra"
-                                android:textSize="13sp"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                         </LinearLayout>

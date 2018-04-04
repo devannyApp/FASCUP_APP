@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FASCUP.iml" filepath="$PROJECT_DIR$/FASCUP.iml" />
       <module fileurl="file://C:\Users\User\Documents\Fastcup_Vanny\FASCUP_APP\FASCUP.iml" filepath="C:\Users\User\Documents\Fastcup_Vanny\FASCUP_APP\FASCUP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FASCUP_APP.iml" filepath="$PROJECT_DIR$/FASCUP_APP.iml" />
+      <module fileurl="file://E:\ProyectosAndroid\FASCUP\FASCUP_APP.iml" filepath="E:\ProyectosAndroid\FASCUP\FASCUP_APP.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\Users\User\Documents\Fastcup_Vanny\FASCUP_APP\app\app.iml" filepath="C:\Users\User\Documents\Fastcup_Vanny\FASCUP_APP\app\app.iml" />
     </modules>

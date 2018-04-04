@@ -85,28 +85,6 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="20dp"
-                            android:text="1. Nro personas que viven en su vivienda:"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-
-                        <EditText
-                            android:id="@+id/hv_nro_habitantes_casa"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/edittextstyle"
-                            android:ems="10"
-                            android:inputType="number"
-                            android:textColor="#6b6b6b"
-                            android:textSize="20sp"
-                            android:layout_marginTop="10dp"
-                            android:visibility="visible" />
-
-                        <TextView
                             android:id="@+id/textView4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -142,12 +120,12 @@
                             android:id="@+id/hv_persona_ausentes"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
                             android:background="@drawable/edittextstyle"
                             android:ems="10"
                             android:inputType="number"
                             android:textColor="#6b6b6b"
                             android:textSize="16sp"
-                            android:layout_marginTop="10dp"
                             android:visibility="visible" />
 
                         <TextView
@@ -499,48 +477,8 @@
                         android:layout_marginLeft="20dp"
                         android:orientation="vertical">
 
-                        <!-- Pregunta 12 -->
-                        <TextView
-                            android:id="@+id/textView16"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="20dp"
-                            android:text="12. ¿De donde toma el agua para el consumo?"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
 
-                        <Spinner
-                            android:id="@+id/idSpinnerAguaConsumo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:background="@drawable/edittextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="20sp" />
-
-
-                        <!-- Pregunta 13 -->
-                        <TextView
-                            android:id="@+id/textView17"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="20dp"
-                            android:text="13. ¿Como llega el agua para el consumo?"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-
-                        <Spinner
-                            android:id="@+id/idSpinnerLlegaAguaConsumo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:background="@drawable/edittextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="20sp" />
-
-                        <!-- Pregunta 14 -->
+                        <!-- Pregunta 15 -->
                         <TextView
                             android:id="@+id/textView18"
                             android:layout_width="wrap_content"
@@ -559,29 +497,6 @@
                             android:background="@drawable/edittextstyle"
                             android:textColor="#6b6b6b"
                             android:textSize="20sp" />
-
-
-                        <!-- Pregunta 15 -->
-                        <TextView
-                            android:id="@+id/textView19"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="20dp"
-                            android:text="15. ¿Como alamcena el agua para el consumo?"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-
-                        <Spinner
-                            android:id="@+id/idSpinnerAguaDesperdicie"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:background="@drawable/edittextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="20sp" />
-
-
 
 
                         <!-- Pregunta 16 -->

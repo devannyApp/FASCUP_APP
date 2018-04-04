@@ -155,7 +155,7 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="20dp"
                             android:layout_marginTop="10dp"
-                            app:cardBackgroundColor="#009688"
+                            app:cardBackgroundColor="#77ca00"
                             app:cardCornerRadius="10dp">
 
 
@@ -200,7 +200,8 @@
                         android:inputType="textMultiLine"
                         android:textColor="#6b6b6b"
                         android:textColorLink="@color/colorPrimary"
-                        android:textSize="18sp"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
                         android:visibility="visible" />
 
                     <EditText
@@ -216,7 +217,8 @@
                         android:inputType="textMultiLine"
                         android:textColor="#6b6b6b"
                         android:textColorLink="@color/colorPrimary"
-                        android:textSize="18sp"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
                         android:visibility="visible" />
                     <EditText
                         android:id="@+id/idNombrePropietario"
@@ -231,7 +233,7 @@
                         android:inputType="number"
                         android:textColor="#6b6b6b"
                         android:textColorLink="@color/colorPrimary"
-                        android:textSize="18sp"
+                        android:textSize="19sp"
                         android:visibility="visible" />
                     <EditText
                         android:id="@+id/idNombrePropietario"
@@ -246,7 +248,7 @@
                         android:inputType="textMultiLine"
                         android:textColor="#6b6b6b"
                         android:textColorLink="@color/colorPrimary"
-                        android:textSize="18sp"
+                        android:textSize="19sp"
                         android:visibility="visible" />
 
                     <Button

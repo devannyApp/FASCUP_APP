@@ -22,6 +22,26 @@
 
     <!--Formulario II-->
 
+    <!--Pregunta 1 -->
+    <string-array name="combo_actividad_economica">
+        <item>Seleccione</item>
+        <item>Agricultura</item>
+        <item>Ganaderia</item>
+        <item>Piscicultuta</item>
+        <item>Forestal</item>
+        <item>Mineria</item>
+        <item>Artesania</item>
+        <item>Comercio</item>
+        <item>Jornal-agricola</item>
+        <item>Obrero-construcción</item>
+        <item>Asalariado</item>
+        <item>Servicios mecánicos-automotores</item>
+        <item>Servicio personal (Estilo)</item>
+        <item>Transporte</item>
+        <item>Restaurante-alimentos</item>
+        <item>Manufactura-productos</item>
+
+    </string-array>
 
     <!-- FORMULARIO III -->
 

@@ -388,8 +388,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="45dp"
                                 android:layout_marginTop="10dp"
-
-                                android:text="Lote"
+                                android:text="Senderos Ecologicos"
                                 android:textAlignment="center"
                                 android:textColor="@color/blancoletra"
                                 android:textSize="13sp"

@@ -1,67 +1,51 @@
 package android.fascup.com.fascup;
 
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 public class FormIIActivity extends AppCompatActivity {
 
-    //Variables del Spinner Municipio
-    Spinner comboMunicipio;
-    Spinner comboReguardo;
-    Spinner comboVereda;
+    //Variables del Spinner
+    Spinner comboActividadEconomica; //Pregunta 1
+
+    //Variables CheckBox
+    CheckBox CheckboxAgricultura,CheckboxGanaderia,CheckboxPiscicultura,CheckboxForestal,CheckboxMineria,CheckboxComercio,
+            CheckboxArtesania,CheckBoxJornaleroAgricola,CheckBoxJornaleroConstruccion,CheckBoxAsalariado,CheckBoxServicioMecanicoAtomotores,
+            CheckBoxServicioPersonal,CheckBoxTransporte,CheckBoxRestaurante,CheckBoxManufacturaProductos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_ii);
 
-        //Definimos Spinner municipio
-        comboMunicipio = findViewById(R.id.idSpinnerMunicipio);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.combo_municipio,android.R.layout.simple_spinner_item);
-        comboMunicipio.setAdapter(adapter);
+        //Definimos Spinner Pregunta 1
+        comboActividadEconomica = findViewById(R.id.idSpinnerActividadEconomica);
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.combo_actividad_economica,android.R.layout.simple_spinner_item);
+
+        comboActividadEconomica.setAdapter(adapter1);
 
 
-        //Definimos Spinner Reguardo
-        comboReguardo = findViewById(R.id.idSpinnerResguardo);
-        ArrayAdapter<CharSequence> adapterR = ArrayAdapter.createFromResource(this,R.array.combo_resguardo,android.R.layout.simple_spinner_item);
-        comboReguardo.setAdapter(adapterR);
-
-        //Definimos Spinner Vereda
-        comboVereda = findViewById(R.id.idSpinnerVereda);
-        ArrayAdapter<CharSequence> adapterV = ArrayAdapter.createFromResource(this,R.array.combo_vereda,android.R.layout.simple_spinner_item);
-        comboVereda.setAdapter(adapterV);
-        /*comboVereda.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
-        {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
-            {
-                Toast.makeText(parent.getContext(), "Seleccionado: "+parent.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?>parent){
-
-            }
-        });*/
+        //Definimos CheckBox Pregunta 2
+        CheckboxAgricultura = (CheckBox) findViewById(R.id.idCheckboxAgricultura);
+        CheckboxGanaderia = (CheckBox) findViewById(R.id.idCheckboxGanaderia);
+        CheckboxPiscicultura = (CheckBox) findViewById(R.id.idCheckboxPiscicultura);
+        CheckboxForestal = (CheckBox) findViewById(R.id.idCheckboxForestal);
+        CheckboxMineria = (CheckBox) findViewById(R.id.idCheckboxMineria);
+        CheckboxComercio = (CheckBox) findViewById(R.id.idCheckboxComercio);
+        CheckboxArtesania = (CheckBox) findViewById(R.id.idCheckboxArtesania);
+        CheckBoxJornaleroAgricola = (CheckBox) findViewById(R.id.idCheckBoxJornaleroAgricola);
+        CheckBoxJornaleroConstruccion = (CheckBox) findViewById(R.id.idCheckBoxJornaleroConstruccion);
+        CheckBoxAsalariado = (CheckBox) findViewById(R.id.idCheckBoxAsalariado);
+        CheckBoxServicioMecanicoAtomotores = (CheckBox) findViewById(R.id.idCheckBoxServicioMecanicoAtomotores);
+        CheckBoxServicioPersonal = (CheckBox) findViewById(R.id.idCheckBoxServicioPersonal);
+        CheckBoxTransporte = (CheckBox) findViewById(R.id.idCheckBoxTransporte);
+        CheckBoxRestaurante = (CheckBox) findViewById(R.id.idCheckBoxRestaurante);
+        CheckBoxManufacturaProductos = (CheckBox) findViewById(R.id.idCheckBoxManufacturaProductos);
 
 
-        //Muestra el boton para volver
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-    }
 
-    //Cierra la actividad al presionar el boton
-    @Override
-    public  boolean onOptionsItemSelected(MenuItem item){
-        if(item.getItemId()==android.R.id.home){
-            finish();
-        }
-        return  super.onOptionsItemSelected(item);
     }
 }

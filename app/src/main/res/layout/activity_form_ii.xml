@@ -4,22 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e1e6e9"
-    android:orientation="vertical"
+    android:background="#fafafa"
     tools:context="android.fascup.com.fascup.FormIIActivity">
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-
+            android:orientation="vertical" >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,16 +23,16 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/headertitulo"
+                android:background="@drawable/headerarticulogris"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hubicación de la Vivienda"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp"
+                    android:text="Actividad económica"
+                    android:textColor="#6f7072"
+                    android:textSize="20sp"
                     android:textStyle="bold"/>
             </LinearLayout>
 
@@ -45,7 +41,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 app:cardCornerRadius="10dp">
 
 
@@ -68,7 +64,7 @@
                             android:id="@+id/imageView2"
                             android:layout_width="100dp"
                             android:layout_height="60dp"
-                            app:srcCompat="@drawable/hubicacionviviendagps" />
+                            app:srcCompat="@drawable/house" />
 
                         <TextView
                             android:id="@+id/textView6"
@@ -77,7 +73,7 @@
                             android:layout_weight="1"
                             android:textColor="#a1a1a1"
                             android:textSize="18sp"
-                            android:text="Ingrese los datos de hubicación de la vivienda" />
+                            android:text="Caracteristicas generales del hogar" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -86,264 +82,181 @@
                         android:layout_marginLeft="20dp"
                         android:orientation="vertical">
 
-
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/textView4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:layout_marginTop="25dp"
-                            android:text="Municipio: "
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-
-                        <!--Municipio-->
-                        <Spinner
-                            android:id="@+id/idSpinnerMunicipio"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:background="@drawable/edittextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="30sp" />
-
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="15dp"
-                            android:text="Resguardo / Cavildo: "
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-
-                        <!--Resguardo-->
-                        <Spinner
-                            android:id="@+id/idSpinnerResguardo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:background="@drawable/edittextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="30sp" />
-
-
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="15dp"
-                            android:text="Vereda: "
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-
-                        <!--Vereda-->
-                        <Spinner
-                            android:id="@+id/idSpinnerVereda"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/edittextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="30sp" />
-
-
-                        <!--Número de Vivienda-->
-                        <EditText
-                            android:id="@+id/idNroVivienda"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
+                            android:text="1. Actividad económica principal de la familia?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerActividadEconomica"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
                             android:background="@drawable/edittextstyle"
-                            android:ems="10"
-                            android:hint="Nro vivienda"
-                            android:inputType="number"
                             android:textColor="#6b6b6b"
-                            android:textSize="16sp"
-                            android:visibility="visible" />
+                            android:textSize="20sp" />
+
+                        <!-- Pregunta 11 -->
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="2. Actividades económicas complementarias de la familia?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxAgricultura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Agricultura"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxGanaderia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ganaderia"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxPiscicultura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Piscicultura"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxForestal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Forestal"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxMineria"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mineria"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxComercio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Comercio"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxArtesania"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AArtesanía"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckBoxJornaleroAgricola"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jornalero agrícola"
+                            android:layout_marginTop="8dp"
+                        android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckBoxJornaleroConstruccion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jornalero construcción"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckBoxAsalariado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Asalariado"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckBoxServicioMecanicoAtomotores"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Servicio mecánico automotores"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckBoxServicioPersonal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Servicio personal (estilo)"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckBoxTransporte"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transporte"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckBoxRestaurante"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Restaurante - alimentos"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
+                        <CheckBox
+                            android:id="@+id/idCheckBoxManufacturaProductos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Munufactura producto"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b"/>
+
                     </LinearLayout>
 
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/headertitulo"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Propietario de la Vivienda"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp"
-                    android:textStyle="bold"/>
-            </LinearLayout>
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
-                app:cardCornerRadius="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="20dp"
-                    android:orientation="vertical">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:id="@+id/imageView2"
-                            android:layout_width="100dp"
-                            android:layout_height="60dp"
-                            app:srcCompat="@drawable/propietariovivienda" />
-
-                        <TextView
-                            android:id="@+id/textView6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="#a1a1a1"
-                            android:textSize="18sp"
-                            android:text="Ingrese los datos del propietario de la vivienda" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:orientation="vertical">
-
-                        <EditText
-                            android:id="@+id/idNombrePropietario"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="25dp"
-                            android:background="@drawable/edittextstyle"
-                            android:ems="10"
-                            android:hint="Nombre del propietario"
-                            android:inputType="textMultiLine"
-                            android:textColor="#6b6b6b"
-                            android:textSize="16sp"
-                            android:visibility="visible" />
-
-
-
-                        <EditText
-                            android:id="@+id/idNombreInformante"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:background="@drawable/edittextstyle"
-                            android:ems="10"
-                            android:hint="Nombre del informante"
-                            android:inputType="textMultiLine"
-                            android:textColor="#6b6b6b"
-                            android:textSize="16sp"
-                            android:visibility="visible" />
-
-
-
-                        <EditText
-                            android:id="@+id/idTelefono1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:background="@drawable/edittextstyle"
-                            android:ems="10"
-                            android:hint="Teléfono celular"
-                            android:inputType="number"
-                            android:textColor="#6b6b6b"
-                            android:textSize="16sp"
-                            android:visibility="visible" />
-
-
-
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="20dp"
-                            android:text="Este campo no es obligatorio"
-                            android:textColor="#77ca00"
-                            android:textSize="16sp" />
-
-
-
-                        <EditText
-                            android:id="@+id/idTelefono2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:background="@drawable/edittextstyle"
-                            android:ems="10"
-                            android:hint="Otro teléfono celular"
-                            android:inputType="number"
-                            android:textColor="#6b6b6b"
-                            android:textSize="16sp"
-                            android:visibility="visible" />
-
-
-
-                        <EditText
-                            android:id="@+id/idDetallesHubicacionVivienda"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:background="@drawable/edittextstyle"
-                            android:ems="10"
-                            android:hint="Detalles de la hubicación de la vivienda"
-                            android:inputType="textMultiLine"
-                            android:textColor="#6b6b6b"
-                            android:textSize="16sp"
-                            android:visibility="visible" />
-
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
 
             <Button
-                android:id="@+id/sutmit"
+                android:id="@+id/idSubmitForm3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/buttomstyle"
-                android:text="Guardar"
+                android:text="Siguiente"
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:onClick="onClick"/>
 
         </LinearLayout>
+
+
+
     </ScrollView>
-
-
 </LinearLayout>

@@ -28,6 +28,8 @@
     <color name="grisfondologo">#f2f2f2</color>
     <color name="btnsuccess">#77ca00</color>
     <color name="colortitulo">#009688</color>
+    <color name="colortitulogris">#f2f2f2</color>
+    <color name="colortituloazul">#fafafa</color>
 
     <!-- Input -->
     <color name="blanco">#ffffff</color>

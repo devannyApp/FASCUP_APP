@@ -72,21 +72,6 @@ public class FormIIIActivity extends AppCompatActivity {
         comboMaterialPisos.setAdapter(adapter10);
 
 
-        //Definimos Spinner Pregunta 12
-        comboAguaConsumo = findViewById(R.id.idSpinnerAguaConsumo);
-        ArrayAdapter<CharSequence> adapter12 = ArrayAdapter.createFromResource(this,R.array.combo_agua_consumo,android.R.layout.simple_spinner_item);
-
-        comboAguaConsumo.setAdapter(adapter12);
-
-
-
-        //Definimos Spinner Pregunta 13
-        comboAccesoAguaConsumo = findViewById(R.id.idSpinnerLlegaAguaConsumo);
-        ArrayAdapter<CharSequence> adapter13 = ArrayAdapter.createFromResource(this,R.array.combo_llega_agua_consumo,android.R.layout.simple_spinner_item);
-
-        comboAccesoAguaConsumo.setAdapter(adapter13);
-
-
 
         //Definimos Spinner Pregunta 14
         comboAlmacenaAguaConsumo = findViewById(R.id.idSpinnerAguaParaConsumo);
@@ -94,12 +79,6 @@ public class FormIIIActivity extends AppCompatActivity {
 
         comboAlmacenaAguaConsumo.setAdapter(adapter14);
 
-
-        //Definimos Spinner Pregunta 15
-        comboAguaDesperdicie = findViewById(R.id.idSpinnerAguaDesperdicie);
-        ArrayAdapter<CharSequence> adapter15 = ArrayAdapter.createFromResource(this,R.array.combo_agua_desperdicie,android.R.layout.simple_spinner_item);
-
-        comboAguaDesperdicie.setAdapter(adapter15);
 
 
         //Definimos Spinner Pregunta 16

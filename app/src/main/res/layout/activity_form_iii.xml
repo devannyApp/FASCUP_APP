@@ -15,8 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
 
             <LinearLayout
@@ -25,7 +24,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/headertitulo"
+                android:background="@drawable/headerarticulogris"
                 android:orientation="vertical">
 
                 <TextView
@@ -33,8 +32,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Hogar"
-                    android:textColor="#ffffff"
-                    android:textSize="18sp"
+                    android:textColor="#6f7072"
+                    android:textSize="20sp"
                     android:textStyle="bold"/>
             </LinearLayout>
 
@@ -43,7 +42,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 app:cardCornerRadius="10dp">
 
 
@@ -164,7 +163,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/headertitulo"
+                android:background="@drawable/headerarticulogris"
                 android:orientation="vertical">
 
                 <TextView
@@ -172,8 +171,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Vivienda"
-                    android:textColor="#ffffff"
-                    android:textSize="18sp"
+                    android:textColor="#6f7072"
+                    android:textSize="20sp"
                     android:textStyle="bold"/>
             </LinearLayout>
 
@@ -182,7 +181,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 app:cardCornerRadius="10dp">
 
 
@@ -418,7 +417,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/headertitulo"
+                android:background="@drawable/headerarticulogris"
                 android:orientation="vertical">
 
                 <TextView
@@ -426,7 +425,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Agua"
-                    android:textColor="#ffffff"
+                    android:textColor="#6f7072"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -556,7 +555,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/headertitulo"
+                android:background="@drawable/headerarticulogris"
                 android:orientation="vertical">
 
                 <TextView
@@ -564,7 +563,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Cosina"
-                    android:textColor="#ffffff"
+                    android:textColor="#6f7072"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -717,7 +716,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/headertitulo"
+                android:background="@drawable/headerarticulogris"
                 android:orientation="vertical">
 
                 <TextView
@@ -725,7 +724,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sanitario"
-                    android:textColor="#ffffff"
+                    android:textColor="#6f7072"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -854,7 +853,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/headertitulo"
+                android:background="@drawable/headerarticulogris"
                 android:orientation="vertical">
 
                 <TextView
@@ -862,7 +861,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Basura"
-                    android:textColor="#ffffff"
+                    android:textColor="#6f7072"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -947,7 +946,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/headertitulo"
+                android:background="@drawable/headerarticulogris"
                 android:orientation="vertical">
 
                 <TextView
@@ -955,7 +954,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Vivienda y agua"
-                    android:textColor="#ffffff"
+                    android:textColor="#6f7072"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
             </LinearLayout>

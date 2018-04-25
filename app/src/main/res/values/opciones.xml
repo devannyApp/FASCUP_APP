@@ -241,5 +241,174 @@
         <item>No aplica</item>
     </string-array>
 
+
+    <!--Frmulario 4 -->
+
+    <!-- pregunta 3 -->
+    <string-array name="combo_parentezco">
+        <item>Seleccione</item>
+        <item>Nuera-yerno</item>
+        <item>Abuelo/a</item>
+        <item>Suegro/a</item>
+        <item>Tio/a</item>
+        <item>Sobrino/a</item>
+        <item>Primo/a</item>
+        <item>Cuñado</item>
+        <item>Cuñada</item>
+        <item>Otro pariente</item>
+        <item>Servivio domestico</item>
+        <item>Otro no pariente</item>
+    </string-array>
+
+    <!-- pregunta 6 -->
+    <string-array name="combo_enfermedad">
+        <item>Seleccione</item>
+        <item>Medicina tradicional</item>
+        <item>Medicina occidenntal</item>
+
+    </string-array>
+
+
+    <!--Frmulario 7 -->
+
+    <!-- pregunta 4 -->
+    <string-array name="combo_acceso_tierra">
+        <item>Seleccione</item>
+        <item>Adjudicada por el cabildo</item>
+        <item>Tieera escriturada dentro del resguardo</item>
+        <item>Tierra escriturada fuera del resguardo</item>
+        <item>encompañia</item>
+        <item>Arrendo</item>
+        <item>Recuperación</item>
+        <item>Herencia</item>
+        <item>Compra</item>
+        <item>Ocupación de tierra</item>
+    </string-array>
+
+
+    <!-- pregunta 6 -->
+    <string-array name="combo_clima">
+        <item>Seleccione</item>
+        <item>Frio</item>
+        <item>Templado</item>
+        <item>Calido</item>
+    </string-array>
+
+    <!-- pregunta 9 -->
+    <string-array name="combo_fuentes_hidricas">
+        <item>Seleccione</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- pregunta 10 -->
+    <string-array name="combo_lugare_no_aptos">
+        <item>Seleccione</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- pregunta 11 -->
+    <string-array name="combo_predio_cordillera">
+        <item>Seleccione</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- pregunta 12 -->
+    <string-array name="combo_cerca">
+        <item>Seleccione</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- pregunta 13 -->
+    <string-array name="combo_paramos">
+        <item>Seleccione</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- pregunta 14 -->
+    <string-array name="combo_piscicultura">
+        <item>Seleccione</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- pregunta 15 -->
+    <string-array name="combo_vivieros">
+        <item>Seleccione</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- pregunta 16 -->
+    <string-array name="combo_huerta">
+        <item>Seleccione</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- pregunta 17 -->
+    <string-array name="combo_sistemap">
+        <item>Seleccione</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+
+    <!--  Formulario 8 -->
+
+   <!-- Pregunta 1 -->
+    <string-array name="combo_especie">
+        <item>Seleccione</item>
+        <item>Gallina de patio</item>
+        <item>Gallina de galpon</item>
+        <item>Pollos de engorde</item>
+        <item>Ganado</item>
+        <item>Ovejo</item>
+        <item>Peces</item>
+        <item>Cabras</item>
+        <item>Curies</item>
+        <item>Conejos</item>
+        <item>Bimbos</item>
+        <item>Abejas</item>
+        <item>Equinos</item>
+        <item>Patos</item>
+        <item>Otros</item>
+
+    </string-array>
+
+    <!-- Pregunta 8 -->
+    <string-array name="combo_proposito">
+        <item>Seleccione</item>
+        <item>Carne</item>
+        <item>Leche</item>
+        <item>Doble Propósito</item>
+        <item>Huevos</item>
+        <item>Trabajo</item>
+        <item>lana</item>
+        <item>Semental</item>
+    </string-array>
+
+    <!--  Formulario 4 -->
+    <string-array name="combo_usoPredio">
+        <item>Seleccione</item>
+        <item>Conservación</item>
+        <item>Ganaderia</item>
+        <item>Agricultura</item>
+    </string-array>
+
+    <!--  Formulario 5 -->
+    <string-array name="combo_actividadArea">
+        <item>Seleccione</item>
+        <item>Ninguna</item>
+        <item>Mineria</item>
+        <item>Caceria</item>
+        <item>Explotación madedera</item>
+        <item>Investigación científica</item>
+    </string-array>
+
 </resources>
 

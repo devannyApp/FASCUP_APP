@@ -29,10 +29,22 @@
     <color name="btnsuccess">#77ca00</color>
     <color name="colortitulo">#009688</color>
     <color name="colortitulogris">#f2f2f2</color>
+    <color name="colortituloinfo">#00bcd4</color>
+    <color name="colortitulomorado">#6b2853</color>
+    <color name="colortituloverde">#85ba32</color>
     <color name="colortituloazul">#fafafa</color>
 
     <!-- Input -->
     <color name="blanco">#ffffff</color>
+
+    <!-- Formulario 5 -->
+    <color name="btn_btn_primary">#0f6078</color>
+
+    <!-- Formulario Vista1 -->
+    <color name="btn_btn_morado_claro">#fca33e</color>
+    <!-- Formulario Vista1 -->
+    <color name="btn_btn_success_claro">#a5c935</color>
+
 
 
 </resources>

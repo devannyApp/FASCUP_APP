@@ -1,6 +1,9 @@
 package android.fascup.com.fascup;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,13 +22,33 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONException;
 
+
 public class LoginActivity extends AppCompatActivity {
     EditText campoUsuario, campoPassword;
     Button btnLogin;
     JSONArray ja;
     @Override
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Ocultamos el Action Bar
+        ActionBar actionBar = getSupportActionBar(); //o en su caso getSupportActionBar();
+        actionBar.hide();
+
+        //Obtiene valor de preferencia (la primera ocasión es por default true).
+        boolean muestra = getValuePreference(getApplicationContext());
+
+        //Valida si muestra o no LicenseActivity.
+        if(muestra){
+            Intent myIntent = new Intent(LoginActivity.this, LicenseActivity.class);
+            startActivity(myIntent);
+            saveValuePreference(getApplicationContext(), false);
+        }
+
+
+        //Validar login
         setContentView(R.layout.activity_login);
 
         campoUsuario =(EditText)  findViewById(R.id.txtUsuario);
@@ -46,6 +69,24 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+
+    //Metodo de ininiciar Licencia Activity
+    private String PREFS_KEY = "mispreferencias";
+    public void saveValuePreference(Context context, Boolean mostrar) {
+        SharedPreferences settings = context.getSharedPreferences(PREFS_KEY, MODE_PRIVATE);
+        SharedPreferences.Editor editor;
+        editor = settings.edit();
+        editor.putBoolean("license", mostrar);
+        editor.commit();
+    }
+    //Metodo de ininiciar Licencia Activity
+    public boolean getValuePreference(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences(PREFS_KEY, MODE_PRIVATE);
+        return  preferences.getBoolean("license", true);
+    }
+
+
+    //Iniciar Sesion
     private void ConsultaPass(String URL) {
 
         Log.i("url",""+URL);

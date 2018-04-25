@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="350dp"
+        android:layout_width="match_parent">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:collapsedTitleTextAppearance="@style/colpasado"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginBottom="@dimen/margenBottom"
+            app:expandedTitleMarginStart="@dimen/margenstart"
+            app:expandedTitleTextAppearance="@style/expandido"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="Identificación del predio"
+            app:toolbarId="@+id/toolbar">
+
+            <ImageView
+                android:id="@+id/app_bar_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/imagen9"
+                android:scaleType="centerCrop" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/headertituloverde"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingrese los siguientes datos"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <!--Pregunta 1-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="1.  Cual es nombre del predio? "
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/idNombrePropietario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:textColor="#6b6b6b"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+
+                        <!--Pregunta 2-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="2. Cual es el nombre de la vereda o resguardo donde esta hubicado el predio?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/idNombrePropietario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:textColor="#6b6b6b"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+                        <!--Pregunta 3-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="3. Cual es la vía de acceso a su predio?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxCaminoHerradura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Camino herradura"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b" />
+
+                        <CheckBox
+                            android:id="@+id/idCheckboxViaCarreteable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vía carreteable"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b" />
+
+                        <!--Pregunta 4-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="4. Cual es el tipo de acceso a la tierra?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerAccesoTierra"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/editselecttextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="50sp" />
+
+                        <!--Pregunta 5-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="5. Tamaño m2"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+                        <EditText
+                            android:id="@+id/idNombrePropietario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:textColor="#6b6b6b"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+                        <!--Pregunta 6-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="6. Clima?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerClima"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/editselecttextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="50sp" />
+
+
+                        <!--Pregunta 7-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="7. Ha realizado análisis de suelo?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/idRadiosSiSuelo"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Si"
+                                android:textColor="#6b6b6b" />
+
+                            <RadioButton
+                                android:id="@+id/idRadiosNoSuelo"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="No"
+                                android:textColor="#6b6b6b" />
+
+                        </LinearLayout>
+
+
+
+                        <!--Pregunta 8 -->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="8. En su predio ha realizado drenajes (chambas, acequias, desagues)?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/idRadiosSiPredio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Si"
+                                android:layout_marginTop="8dp"
+                                android:textColor="#6b6b6b" />
+                            <RadioButton
+                                android:id="@+id/idRadiosNoPredio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="95dp"
+                                android:text="No"
+                                android:layout_marginTop="8dp"
+                                android:textColor="#6b6b6b" />
+
+                        </LinearLayout>
+
+                        <!--Pregunta 9 -->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="9. Hay fuentes hídricas en?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+                        <Spinner
+                            android:id="@+id/idSpinnerFuenteHidricas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/editselecttextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="50sp" />
+
+                        <!--Pregunta 10 -->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="10. Hay lugares no aptos para la agricultura o la ganaderia en"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+                        <Spinner
+                            android:id="@+id/idSpinnerLugaresNoAptos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/editselecttextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="50sp" />
+
+                        <!--Pregunta 11 -->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="11. El predio tiene filos o cordilleras"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+                        <Spinner
+                            android:id="@+id/idSpinnerPredioCordilleras"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/editselecttextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="50sp" />
+
+                        <!--Pregunta 12 -->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="12. Tiene cercas en"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+                        <Spinner
+                            android:id="@+id/idSpinnerTieneCercas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/editselecttextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="50sp" />
+
+                        <!--Pregunta 13 -->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="13. Hay zonas de páramo en"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+                        <Spinner
+                            android:id="@+id/idSpinnerZonasParamos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/editselecttextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="50sp" />
+
+                        <!--Pregunta 14 -->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="14. Área de piscicultura en"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+                        <Spinner
+                            android:id="@+id/idSpinnerAreaPiscicultura"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/editselecttextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="50sp" />
+
+                        <!--Pregunta 15 -->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="15. Hay viveros en"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+                        <Spinner
+                            android:id="@+id/idSpinnerVivieros"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/editselecttextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="50sp" />
+
+                        <!--Pregunta 16 -->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="16. Cuenta con Tul/huerta en"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+                        <Spinner
+                            android:id="@+id/idSpinnerHuerta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/editselecttextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="50sp" />
+
+                        <!--Pregunta 17 -->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="12dp"
+                            android:text="17. Tiene sistema agro-pastoril en"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+                        <Spinner
+                            android:id="@+id/idSpinnerSistemaP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/editselecttextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <Button
+                android:id="@+id/btn_registrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttomstyle"
+                android:text="Siguiente"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:onClick="onClick" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_help"
+        app:backgroundTint="#E91E63"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|right|end" />
+</android.support.design.widget.CoordinatorLayout>

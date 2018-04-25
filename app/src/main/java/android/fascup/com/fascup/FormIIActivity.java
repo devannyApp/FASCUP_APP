@@ -1,5 +1,6 @@
 package android.fascup.com.fascup;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -7,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.Spinner;
 
 public class FormIIActivity extends AppCompatActivity {
+
 
     //Variables del Spinner
     Spinner comboActividadEconomica; //Pregunta 1
@@ -20,6 +22,10 @@ public class FormIIActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_ii);
+
+        //Oculta el Action Bar
+        ActionBar actionBar = getSupportActionBar(); //o en su caso getSupportActionBar();
+        actionBar.hide();
 
         //Definimos Spinner Pregunta 1
         comboActividadEconomica = findViewById(R.id.idSpinnerActividadEconomica);
@@ -44,7 +50,6 @@ public class FormIIActivity extends AppCompatActivity {
         CheckBoxTransporte = (CheckBox) findViewById(R.id.idCheckBoxTransporte);
         CheckBoxRestaurante = (CheckBox) findViewById(R.id.idCheckBoxRestaurante);
         CheckBoxManufacturaProductos = (CheckBox) findViewById(R.id.idCheckBoxManufacturaProductos);
-
 
 
     }

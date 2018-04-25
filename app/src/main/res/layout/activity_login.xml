@@ -6,83 +6,113 @@
     android:background="#f2f2f2">
 
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="365dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/paisajelogin1" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="420dp"
-        android:orientation="vertical">
-
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="250sp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="150sp"
-            android:text="Iniciar sección"
-            android:textColor="#7cb342"
-            android:textSize="35sp"
-            android:layout_marginBottom="25dp" />
-
-
-        <EditText
-            android:id="@+id/txtUsuario"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@drawable/inputprimaryblanco"
-            android:ems="10"
-            android:hint="Usuario"
-            android:inputType="textMultiLine"
-            android:textColor="#6b6b6b"
-            android:textColorLink="@color/colorPrimary"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:visibility="visible" />
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/paisajelogin1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
 
 
-        <EditText
-            android:id="@+id/txtPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/inputprimaryblanco"
-            android:ems="10"
-            android:hint="Pasword"
-            android:inputType="textPassword"
-            android:textColor="#6b6b6b"
-            android:textColorLink="@color/colorPrimaryDark"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:visibility="visible"/>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#efefef"
+                    app:cardCornerRadius="10dp">
 
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/buttomstyle"
-            android:text="Continuar"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
-    </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="250sp"
+                                android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                                android:text="Iniciar sesión"
+                                android:textColor="#7cb342"
+                                android:textSize="35sp"
+                                android:layout_marginBottom="25dp" />
+
+                            <EditText
+                                android:id="@+id/txtUsuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/inputprimaryblanco"
+                                android:ems="10"
+                                android:hint="Usuario"
+                                android:inputType="textMultiLine"
+                                android:textColor="#6b6b6b"
+                                android:textColorLink="@color/colorPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+
+                            <EditText
+                                android:id="@+id/txtPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/inputprimaryblanco"
+                                android:ems="10"
+                                android:hint="Pasword"
+                                android:inputType="textPassword"
+                                android:textColor="#6b6b6b"
+                                android:textColorLink="@color/colorPrimaryDark"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:visibility="visible"/>
+
+                            <Button
+                                android:id="@+id/btnLogin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:background="@drawable/buttomstyle"
+                                android:text="Continuar"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

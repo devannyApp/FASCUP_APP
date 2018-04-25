@@ -1,169 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#f2f2f2"
-    tools:context="android.fascup.com.fascup.FormIActivity">
+    android:layout_height="match_parent">
 
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent">
 
-    <LinearLayout
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:collapsedTitleTextAppearance="@style/colpasado"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginBottom="@dimen/margenBottom"
+            app:expandedTitleMarginStart="@dimen/margenstart"
+            app:expandedTitleTextAppearance="@style/expandido"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="Identificación  formulario"
+            app:toolbarId="@+id/toolbar">
+
+            <ImageView
+                android:id="@+id/app_bar_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/paisajelogin"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:background="@drawable/headertituloazul"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Registre los siguientes datos"
-                            android:textColor="#6f7072"
-                            android:textSize="18sp"
-                            android:textStyle="bold"/>
-                    </LinearLayout>
-
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="5dp"
-                        app:cardCornerRadius="10dp">
-
+                        android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginLeft="20dp"
                             android:layout_marginRight="20dp"
+                            android:background="@drawable/headertituloverde"
                             android:orientation="vertical">
 
-                            <LinearLayout
+                            <TextView
+                                android:id="@+id/textView"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="20dp"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/textView3"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="14dp"
-                                    android:text="Municipio: "
-                                    android:textColor="#a1a1a1"
-                                    android:textSize="18sp" />
-
-                                <!--Municipio-->
-                                <Spinner
-                                    android:id="@+id/idSpinnerMunicipio"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="6dp"
-                                    android:background="@drawable/editselecttextstyle"
-                                    android:textColor="#6b6b6b"
-                                    android:textSize="50sp" />
-
-                                <TextView
-                                    android:id="@+id/textView3"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Resguardo: "
-                                    android:textColor="#a1a1a1"
-                                    android:textSize="18sp" />
-
-                                <!--Resguardo-->
-
-                                <Spinner
-                                    android:id="@+id/idSpinnerResguardo"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="6dp"
-                                    android:background="@drawable/editselecttextstyle"
-                                    android:textColor="#6b6b6b"
-                                    android:textSize="50sp" />
-
-
-                                <TextView
-                                    android:id="@+id/textView3"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Vereda: "
-                                    android:textColor="#a1a1a1"
-                                    android:textSize="18sp" />
-
-                                <!--Vereda-->
-                                <Spinner
-                                    android:id="@+id/idSpinnerVereda"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="6dp"
-                                    android:background="@drawable/editselecttextstyle"
-                                    android:textColor="#6b6b6b"
-                                    android:textSize="50sp" />
-
-                            </LinearLayout>
-
-
+                                android:layout_height="wrap_content"
+                                android:text="Ingrese los siguientes datos"
+                                android:textColor="#fff"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
                         </LinearLayout>
-                    </android.support.v7.widget.CardView>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="10sp"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:id="@+id/imageView2"
-                            android:layout_width="170dp"
-                            android:layout_height="170dp"
-                            android:layout_marginTop="10sp"
-                            app:srcCompat="@drawable/usuarioprueba1" />
 
                         <android.support.v7.widget.CardView
                             android:layout_width="match_parent"
-                            android:layout_height="130sp"
+                            android:layout_height="match_parent"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="20dp"
-                            android:layout_marginTop="10dp"
-                            app:cardBackgroundColor="#77ca00"
+                            android:layout_marginTop="5dp"
                             app:cardCornerRadius="10dp">
 
 
@@ -172,7 +89,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="10dp"
                                 android:layout_marginRight="20dp"
-                                android:layout_marginTop="10dp">
+                                android:orientation="vertical">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -185,120 +102,300 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="14dp"
-                                        android:text="Acontinuación registre la información del informante y el propietario. "
-                                        android:textSize="17sp"
-                                        android:textColor="#fff"
-                                        android:textStyle="normal" />
+                                        android:text="Municipio: "
+                                        android:textColor="#a1a1a1"
+                                        android:textSize="16sp" />
+
+                                    <!--Municipio-->
+                                    <Spinner
+                                        android:id="@+id/idSpinnerMunicipio"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:background="@drawable/editselecttextstyle"
+                                        android:textColor="#6b6b6b"
+                                        android:textSize="50sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="12dp"
+                                        android:text="Resguardo: "
+                                        android:textColor="#a1a1a1"
+                                        android:textSize="16sp" />
+
+                                    <!--Resguardo-->
+
+                                    <Spinner
+                                        android:id="@+id/idSpinnerResguardo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:background="@drawable/editselecttextstyle"
+                                        android:textColor="#6b6b6b"
+                                        android:textSize="50sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/textView3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="12dp"
+                                        android:text="Vereda: "
+                                        android:textColor="#a1a1a1"
+                                        android:textSize="16sp" />
+
+                                    <!--Vereda-->
+                                    <Spinner
+                                        android:id="@+id/idSpinnerVereda"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:background="@drawable/editselecttextstyle"
+                                        android:textColor="#6b6b6b"
+                                        android:textSize="50sp" />
 
                                 </LinearLayout>
+
+
                             </LinearLayout>
                         </android.support.v7.widget.CardView>
+
                     </LinearLayout>
 
-                    <android.support.v7.widget.CardView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="15dp"
-                        app:cardCornerRadius="10dp">
+                        android:orientation="vertical">
+
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_marginTop="10sp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
 
-                            <EditText
-                                android:id="@+id/idNombrePropietario"
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="170dp"
+                                android:layout_height="170dp"
+                                android:layout_marginTop="10sp"
+                                app:srcCompat="@drawable/usuarioprueba1" />
+
+                            <android.support.v7.widget.CardView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="130sp"
                                 android:layout_marginLeft="20dp"
                                 android:layout_marginRight="20dp"
-                                android:layout_marginTop="20sp"
-                                android:background="@drawable/edittextstyle"
-                                android:ems="10"
-                                android:hint="Nombre del propietario"
-                                android:inputType="textMultiLine"
-                                android:textColor="#6b6b6b"
-                                android:textColorLink="@color/colorPrimary"
-                                android:textSize="18sp"
-                                android:visibility="visible"
-                                />
+                                android:layout_marginTop="10dp"
+                                app:cardBackgroundColor="#f1f8e9"
+                                app:cardCornerRadius="10dp">
 
-                            <EditText
-                                android:id="@+id/idNombrePropietario"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_marginTop="14sp"
-                                android:background="@drawable/edittextstyle"
-                                android:ems="10"
-                                android:hint="Nombre del informante"
-                                android:inputType="textMultiLine"
-                                android:textColor="#6b6b6b"
-                                android:textColorLink="@color/colorPrimary"
-                                android:textSize="18sp"
-                                android:visibility="visible" />
-                            <EditText
-                                android:id="@+id/idNombrePropietario"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_marginTop="14sp"
-                                android:background="@drawable/edittextstyle"
-                                android:ems="10"
-                                android:hint="Telefono"
-                                android:inputType="number"
-                                android:textColor="#6b6b6b"
-                                android:textColorLink="@color/colorPrimary"
-                                android:textSize="18sp"
-                                android:visibility="visible" />
 
-                            <EditText
-                                android:id="@+id/idNombrePropietario"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_marginTop="14sp"
-                                android:ems="10"
-                                android:hint="Dirección"
-                                android:inputType="textMultiLine"
-                                android:textColor="#6b6b6b"
-                                android:textColorLink="@color/colorPrimary"
-                                android:textSize="18sp"
-                                android:visibility="visible" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="10dp">
 
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="20dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="14dp"
+                                            android:text="Acontinuación registre la información del informante y el propietario. "
+                                            android:textColor="#939492"
+                                            android:textSize="17sp"
+                                            android:textStyle="normal" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
                         </LinearLayout>
 
-                    </android.support.v7.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/headertituloverde"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Datos del informante"
+                                android:textColor="#fff"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="3dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="1. Nombre del Propietario"
+                                    android:textColor="#a1a1a1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/idNombrePropietario"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="3sp"
+                                    android:background="@drawable/edittextstyle"
+                                    android:ems="10"
+                                    android:inputType="textMultiLine"
+                                    android:textColor="#6b6b6b"
+                                    android:textColorLink="@color/colorPrimary"
+                                    android:textSize="18sp"
+                                    android:visibility="visible" />
 
 
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="2. Nombre del informante"
+                                    android:textColor="#a1a1a1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/idNombrePropietario"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="3sp"
+                                    android:background="@drawable/edittextstyle"
+                                    android:ems="10"
+                                    android:inputType="textMultiLine"
+                                    android:textColor="#6b6b6b"
+                                    android:textColorLink="@color/colorPrimary"
+                                    android:textSize="18sp"
+                                    android:visibility="visible" />
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="4. Telefono"
+                                    android:textColor="#a1a1a1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/idNombrePropietario"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="3sp"
+                                    android:ems="10"
+                                    android:inputType="number"
+                                    android:textColor="#6b6b6b"
+                                    android:textColorLink="@color/colorPrimary"
+                                    android:textSize="16sp"
+                                    android:background="@drawable/edittextstyle"
+                                    android:visibility="visible" />
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="5. Dirección"
+                                    android:textColor="#a1a1a1"
+                                    android:textSize="16sp" />
 
 
+                                <EditText
+                                    android:id="@+id/idNombrePropietario"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="3sp"
+                                    android:layout_marginBottom="20dp"
+                                    android:ems="10"
+                                    android:inputType="textMultiLine"
+                                    android:textColor="#6b6b6b"
+                                    android:textColorLink="@color/colorPrimary"
+                                    android:textSize="16sp"
+                                    android:background="@drawable/edittextstyle"
+                                    android:visibility="visible" />
 
-                    <Button
-                        android:id="@+id/idSubmitForm3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:background="@drawable/buttomstyle"
-                        android:text="Siguiente"
-                        android:textColor="#ffffff"
-                        android:textSize="18sp"
-                        android:onClick="onClick"/>
-                </LinearLayout>
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
 
 
+                        <Button
+                            android:id="@+id/idSubmitForm3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/buttomstyle"
+                            android:text="Siguiente"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:onClick="onClick" />
+                    </LinearLayout>
 
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
-</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_help"
+        app:backgroundTint="#E91E63"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>

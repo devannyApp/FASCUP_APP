@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="350dp"
+        android:layout_width="match_parent">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:collapsedTitleTextAppearance="@style/colpasado"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginBottom="@dimen/margenBottom"
+            app:expandedTitleMarginStart="@dimen/margenstart"
+            app:expandedTitleTextAppearance="@style/expandido"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="Identificación de paramos"
+            app:toolbarId="@+id/toolbar">
+
+            <ImageView
+                android:id="@+id/app_bar_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/paramos1"
+                android:scaleType="centerCrop" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/headertituloverde"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Identificación de paramos por predio"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <!--Pregunta 1-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="1. Área aproximada de páramos m2 "
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+
+                        <EditText
+                            android:id="@+id/idArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:textColor="#6b6b6b"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+                        <!--Pregunta 2-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="2. Hay área protegida?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/idRadioAreaProtegidaSi"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Si"
+                                android:textColor="#6b6b6b" />
+
+                            <RadioButton
+                                android:id="@+id/idRadioAreaProtegidaNo"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="No"
+                                android:textColor="#6b6b6b" />
+                        </RadioGroup>
+
+                        <!--Pregunta 3-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="2. Hay área intervenida?"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/idRadioAreaIntervenidaSi"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Si"
+                                android:textColor="#6b6b6b" />
+
+                            <RadioButton
+                                    android:id="@+id/idRadioAreaIntervenidaNo"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="No"
+                                android:textColor="#6b6b6b" />
+                        </RadioGroup>
+
+
+                        <!--Pregunta 4-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="4. Que uso le esta haciendo a este predio"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerUsoPredio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+                        <!--Pregunta 5-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="5. Que otra actividad están realizando en este área"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/idSpinnerActividadArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittextstyle"
+                            android:textColor="#6b6b6b"
+                            android:textSize="20sp" />
+
+                        <!--Pregunta 6-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="6. Especies de fauna identificadas hay (Nombrelas)"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/idEspeciFauna"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:textColor="#6b6b6b"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+                        <!--Pregunta 7-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="7. Especie de flora identificadas hay (Nombrelas)"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/idEspeciFlora"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:textColor="#6b6b6b"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+                        <!--Pregunta 8-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="8. Numero de humedades"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/idNumeroHumedades"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:textColor="#6b6b6b"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+                        <!--Pregunta 9-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="9. Hay lagunas"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/idLugunas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OK. Por favor continue."
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b" />
+
+                        <!--Pregunta 10-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="10. Le interesaria ser re-ubicado a otro territorio"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/idReUbicado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OK. Por favor continue."
+                            android:layout_marginTop="8dp"
+                            android:textColor="#6b6b6b" />
+
+                        <!--Pregunta 11-->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="11. Le interesaría recibir incentivos por la conservación de esta área"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/idRecibirIncentivos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:textColor="#6b6b6b"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_registrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttomstyle"
+                android:text="Siguiente"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:onClick="onClick" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_help"
+        app:backgroundTint="#E91E63"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|right|end" />
+</android.support.design.widget.CoordinatorLayout>

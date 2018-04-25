@@ -7,7 +7,7 @@
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         android:layout_width="match_parent">
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -19,28 +19,26 @@
             app:expandedTitleMarginStart="@dimen/margenstart"
             app:expandedTitleTextAppearance="@style/expandido"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:title="Actividad económica"
+            app:title="Senderos Ecologicos"
             app:toolbarId="@+id/toolbar">
 
             <ImageView
                 android:id="@+id/app_bar_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/imagen6" />
+                android:src="@drawable/imagen10"
+                android:scaleType="centerCrop" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize">
-
-            </android.support.v7.widget.Toolbar>
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"></android.support.v7.widget.Toolbar>
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="714dp"
         app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
 
         <LinearLayout
@@ -48,12 +46,18 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!-- <ImageView
+                 android:id="@+id/imageView"
+                 android:layout_width="match_parent"
+                 android:layout_height="120dp"
+                 app:srcCompat="@drawable/senderosecologicos" />-->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/headertituloverde"
                 android:orientation="vertical">
 
@@ -61,7 +65,7 @@
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ingresos económicos del hogar"
+                    android:text="Senderos ecologicos"
                     android:textColor="#fff"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -79,12 +83,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
                     android:orientation="vertical">
-
-
 
 
                     <LinearLayout
@@ -99,149 +101,111 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginTop="20dp"
-                            android:text="1. Actividad económica principal de la familia?"
+                            android:text="1. En su vereda hay sitios para hacer turismo ecologicos SI - CUALES?"
                             android:textColor="#a1a1a1"
                             android:textSize="16sp" />
 
-                        <Spinner
-                            android:id="@+id/idSpinnerActividadEconomica"
+                        <EditText
+                            android:id="@+id/idNombrePropietario"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="3sp"
                             android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
                             android:textColor="#6b6b6b"
-                            android:textSize="20sp" />
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
 
-                        <!-- Pregunta 11 -->
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="2. Sitios estratégicos como senderos ecologicos"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/idNombrePropietario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:textColor="#6b6b6b"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:text="3. Animales silvestres en esta region"
+                            android:textColor="#a1a1a1"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/idNombrePropietario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/edittextstyle"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:textColor="#6b6b6b"
+                            android:textColorLink="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+                        <!-- Pregunta 4 -->
                         <TextView
                             android:id="@+id/textView15"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginTop="20dp"
-                            android:text="2. Actividades económicas complementarias de la familia?"
+                            android:text="4. Acceso a los senderos"
                             android:textColor="#a1a1a1"
                             android:textSize="16sp" />
 
                         <CheckBox
-                            android:id="@+id/idCheckboxAgricultura"
+                            android:id="@+id/idCheckboxCaminoHerradura"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Agricultura"
                             android:layout_marginTop="8dp"
+                            android:text="Camino herradura"
                             android:textColor="#6b6b6b" />
 
                         <CheckBox
-                            android:id="@+id/idCheckboxGanaderia"
+                            android:id="@+id/idCheckboxVíaCarreteable"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ganaderia"
                             android:layout_marginTop="8dp"
+                            android:text="Vía-carretea-ble"
                             android:textColor="#6b6b6b" />
 
                         <CheckBox
-                            android:id="@+id/idCheckboxPiscicultura"
+                            android:id="@+id/idCheckboxApie"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Piscicultura"
                             android:layout_marginTop="8dp"
+                            android:text="Apie"
                             android:textColor="#6b6b6b" />
 
-                        <CheckBox
-                            android:id="@+id/idCheckboxForestal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Forestal"
-                            android:layout_marginTop="8dp"
-                            android:textColor="#6b6b6b" />
-
-                        <CheckBox
-                            android:id="@+id/idCheckboxMineria"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Mineria"
-                            android:layout_marginTop="8dp"
-                            android:textColor="#6b6b6b" />
-
-                        <CheckBox
-                            android:id="@+id/idCheckboxComercio"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Comercio"
-                            android:layout_marginTop="8dp"
-                            android:textColor="#6b6b6b" />
-
-                        <CheckBox
-                            android:id="@+id/idCheckboxArtesania"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="AArtesanía"
-                            android:layout_marginTop="8dp"
-                            android:textColor="#6b6b6b" />
-
-                        <CheckBox
-                            android:id="@+id/idCheckBoxJornaleroAgricola"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Jornalero agrícola"
-                            android:layout_marginTop="8dp"
-                            android:textColor="#6b6b6b" />
-
-                        <CheckBox
-                            android:id="@+id/idCheckBoxJornaleroConstruccion"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Jornalero construcción"
-                            android:layout_marginTop="8dp"
-                            android:textColor="#6b6b6b" />
-
-                        <CheckBox
-                            android:id="@+id/idCheckBoxAsalariado"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Asalariado"
-                            android:layout_marginTop="8dp"
-                            android:textColor="#6b6b6b" />
-
-                        <CheckBox
-                            android:id="@+id/idCheckBoxServicioMecanicoAtomotores"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Servicio mecánico automotores"
-                            android:layout_marginTop="8dp"
-                            android:textColor="#6b6b6b" />
-
-                        <CheckBox
-                            android:id="@+id/idCheckBoxServicioPersonal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Servicio personal (estilo)"
-                            android:layout_marginTop="8dp"
-                            android:textColor="#6b6b6b" />
-
-                        <CheckBox
-                            android:id="@+id/idCheckBoxTransporte"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Transporte"
-                            android:layout_marginTop="8dp"
-                            android:textColor="#6b6b6b" />
-
-                        <CheckBox
-                            android:id="@+id/idCheckBoxRestaurante"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Restaurante - alimentos"
-                            android:layout_marginTop="8dp"
-                            android:textColor="#6b6b6b" />
-
-                        <CheckBox
-                            android:id="@+id/idCheckBoxManufacturaProductos"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Munufactura producto"
-                            android:layout_marginTop="8dp"
-                            android:textColor="#6b6b6b" />
 
                     </LinearLayout>
 
@@ -255,16 +219,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
                 android:background="@drawable/buttomstyle"
+                android:onClick="onClick"
                 android:text="Siguiente"
                 android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:onClick="onClick" />
-
+                android:textSize="18sp" />
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

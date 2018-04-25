@@ -1,16 +1,26 @@
 package android.fascup.com.fascup;
 
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class FormIIIActivity extends AppCompatActivity {
+
+    //Varibles del EdidText
+    EditText habitante_de_vivienda, persona_ausentes, personas_comforman_nucleo_familiar, habitantes_casa,
+            cuartos_vivienda;
+
 
     //Variables del Spinner
     Spinner comboTendenciaVivienda; //Pregunta 7
@@ -38,10 +48,26 @@ public class FormIIIActivity extends AppCompatActivity {
             CheckboxEnergia, CheckBoxOtro, CheckboxOjoAgua, CheckboxQuebrada, CheckboxRio, CheckboxCienaga, CheckboxHumedal,
             CheckboxLaguna, CheckboxNinguno;
 
+    //Varibles del boton de Dialogo alerta
+     Button simpleDialogo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_iii);
+
+
+        //Oculta el Action Bar
+        ActionBar actionBar = getSupportActionBar(); //o en su caso getSupportActionBar();
+        actionBar.hide();
+
+        //Referenciamos los Editext
+        habitante_de_vivienda = findViewById(R.id.id_hv_nro_habitante_de_vivienda);
+        persona_ausentes = findViewById(R.id.id_hv_persona_ausentes);
+        personas_comforman_nucleo_familiar = findViewById(R.id.id_hv_nro_personas_comforman_nucleo_f);
+        habitantes_casa = findViewById(R.id.id_hv_nro_habitantes_casa);
+        cuartos_vivienda = findViewById(R.id.id_nro_cuartos_vivienda);
+
 
         //Definimos Spinner Pregunta 7
         comboTendenciaVivienda = findViewById(R.id.idSpinnerTendenciaVivienda);
@@ -181,18 +207,105 @@ public class FormIIIActivity extends AppCompatActivity {
         CheckboxLaguna  = (CheckBox) findViewById(R.id.idCheckboxLaguna);
         CheckboxNinguno  = (CheckBox) findViewById(R.id.idCheckboxNinguno);
 
-        //Muestra el boton para volver
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+
+        //Referenciamos el boton
+        simpleDialogo  = (Button) findViewById(R.id.idBtnHogarVivienda);
+
+        simpleDialogo.setOnClickListener(new View.OnClickListener() {
+
+          public void onClick(View v){
+              AlertDialog.Builder builder = new AlertDialog.Builder(FormIIIActivity.this);
+
+              //Constructor
+              builder.setIcon(R.drawable.userlogin).
+                      setTitle("Hola!").
+                      setMessage("Para finalizar ¿Deseas agregar un nuevo NÚCLEO FAMILIAR y sus características generales del hogar y vivienda?").
+                      setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                          @Override
+                          public void onClick(DialogInterface dialog, int which) {
+                              Toast.makeText(FormIIIActivity.this, "Haz agregado un nuevo NUECLEO FAMILIAR", Toast.LENGTH_SHORT).show();
+
+                             //Limpiamos el formulario
+                             LimpiarForm();
+
+                          }
+                      }).
+                      setNegativeButton("No gracias!", new DialogInterface.OnClickListener() {
+                          @Override
+                          public void onClick(DialogInterface dialog, int which) {
+                              //dialog.dismiss();
+
+                              Intent miIntent= new Intent(FormIIIActivity.this,MainActivity.class);
+                              startActivity(miIntent);
+                          }
+                      });
+
+
+
+              AlertDialog alertDialog = builder.create();
+              alertDialog.show();
+          }
+
+        });
+
     }
 
+    //Limpiar formulario
+    public void LimpiarForm(){
+
+        //Limpiamos los editText
+        habitante_de_vivienda.setText(null);
+        persona_ausentes.setText(null);
+        personas_comforman_nucleo_familiar.setText(null);
+        habitantes_casa.setText(null);
+        cuartos_vivienda.setText(null);
+        //habitante_de_vivienda.setText("");
+
+        //Limpiamos los spinner
+        //comboTendenciaVivienda.setSelectedItem("Seleccione");
+        /*comboMaterialParedes.setSelectedItem("Seleccione");
+        comboMaterialTechos.setSelectedItem("Seleccione");
+        comboMaterialPisos.setSelectedItem("Seleccione");
+        comboAguaConsumo.setSelectedItem("Seleccione");
+        comboAccesoAguaConsumo.setSelectedItem("Seleccione");
+        comboAlmacenaAguaConsumo.setSelectedItem("Seleccione");
+        comboAguaDesperdicie.setSelectedItem("Seleccione");
+        comboHierbenAgua.setSelectedItem("Seleccione");
+        comboHierbenAgua.setSelectedItem("Seleccione");
+        comboLugarPreparacionAlimentos.setSelectedItem("Seleccione");
+        comboCosinaUso.setSelectedItem("Seleccione");
+        comboAlumbradoVivienda.setSelectedItem("Seleccione");
+        comboServicioSanitario.setSelectedItem("Seleccione");
+        comboHubicacionServicioSanitario.setSelectedItem("Seleccione");
+        comboEliminarBasuras.setSelectedItem("Seleccione");
+        comboViertenAguas.setSelectedItem("Seleccione");
+        comboHierbenAguaServidas.setSelectedItem("Seleccione");*/
+
+
+
+        //listadesplegable1.setSelectedIndex(0);
+
+
+
+    }
+
+
     //METODO CheckBox
-    public void onclick(View view){
-        if(view.getId()==R.id.idSubmitForm3){
+    public void onClick(View view){
+
+    Intent miIntent= new Intent(FormIIIActivity.this,FormVActivity.class);
+    startActivity(miIntent);
+
+        /*if(view.getId()==R.id.idSubmitForm3){
             validarServiciosBasicos();
             validarCosinanAlimentos();
             validarViviendaCerca();
-        }
+        }*/
+    }
+
+    public void onClickAyuda(View view){
+        Intent miIntent= new Intent(FormIIIActivity.this,VistaFormII.class);
+        startActivity(miIntent);
     }
 
     //METODO PARA VALIDAR ServiciosBasicos CheckBox
@@ -289,4 +402,5 @@ public class FormIIIActivity extends AppCompatActivity {
         }
         return  super.onOptionsItemSelected(item);
     }
+
 }

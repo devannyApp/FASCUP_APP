@@ -353,7 +353,7 @@
 
 
                 <!-- Formulario V-->
-                <android.support.v7.widget.CardView
+                <!--<android.support.v7.widget.CardView
                     android:id="@+id/CardViewForm_V"
                     android:layout_width="190dp"
                     android:layout_height="230dp"
@@ -398,10 +398,10 @@
 
 
                     </LinearLayout>
-                </android.support.v7.widget.CardView>
+                </android.support.v7.widget.CardView>-->
 
                 <!-- Formulario VI-->
-                <android.support.v7.widget.CardView
+                <!--<android.support.v7.widget.CardView
                     android:id="@+id/CardViewForm_VI"
                     android:layout_width="190dp"
                     android:layout_height="230dp"
@@ -446,7 +446,7 @@
 
 
                     </LinearLayout>
-                </android.support.v7.widget.CardView>
+                </android.support.v7.widget.CardView>-->
 
             </LinearLayout>
 
@@ -462,7 +462,7 @@
 
 
                 <!-- Formulario V-->
-                <android.support.v7.widget.CardView
+                <!--<android.support.v7.widget.CardView
                     android:id="@+id/CardViewForm_V"
                     android:layout_width="190dp"
                     android:layout_height="230dp"
@@ -508,10 +508,10 @@
 
 
                     </LinearLayout>
-                </android.support.v7.widget.CardView>
+                </android.support.v7.widget.CardView>-->
 
                 <!-- Formulario VI-->
-                <android.support.v7.widget.CardView
+                <!--<android.support.v7.widget.CardView
                     android:id="@+id/CardViewForm_VI"
                     android:layout_width="190dp"
                     android:layout_height="230dp"
@@ -556,7 +556,7 @@
 
 
                     </LinearLayout>
-                </android.support.v7.widget.CardView>
+                </android.support.v7.widget.CardView>-->
 
             </LinearLayout>
 

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85ba32"
+    tools:context="android.fascup.com.fascup.LicenseActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="Fastcup"
+                    android:textColor="#ffffff"
+                    android:textSize="45dp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="400sp"
+                    android:layout_height="100sp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="60dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fastcup es una App que te ayuda a realizar procesos de manera optimizada, para el registro del censo comunitario de nuestra region. "
+                        android:textSize="18sp"
+                        android:textColor="#fff"
+                        android:textStyle="normal"/>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="550dp"
+                    android:layout_height="460dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/vistaidentificacionvivienda" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="500dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp">
+
+                <Button
+                    android:id="@+id/btn_agregar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_btn_succes_claro"
+                    android:text="Continuar"
+                    android:layout_margin="10dp"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:onClick="onClick"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

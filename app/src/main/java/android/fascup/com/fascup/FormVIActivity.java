@@ -2,7 +2,10 @@ package android.fascup.com.fascup;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +27,9 @@ import java.util.Calendar;
 
 
 public class FormVIActivity extends AppCompatActivity {
+
+    //Varibles Edittext
+    EditText NombreApellido;
 
    //Varibles radios
    RadioButton r1, r2;
@@ -49,6 +55,9 @@ public class FormVIActivity extends AppCompatActivity {
     //Variables CheckBox
     CheckBox CheckboxIndigenaNasa,CheckboxIndigena,CheckboxGuanbiano,CheckboxAbro,CheckboxMulato,CheckboxMestiso,
             CheckboxBlanco,CheckBoxOtro,CheckBoxHabla,CheckBoxEntiende,CheckBoxNinguno;
+
+    //Varibles del boton de Dialogo alerta
+    Button simpleDialogo;
 
     @Override //MEtODO DEL CICLO DE VIDA DE UNA ACTIVIDAD
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,6 +122,50 @@ public class FormVIActivity extends AppCompatActivity {
             CheckBoxNinguno= (CheckBox) findViewById(R.id.idCheckBoxNinguno);
 
 
+        //Referenciamos el boton
+        simpleDialogo  = (Button) findViewById(R.id.id_btn_registrar_nucleo_familiar);
+
+        simpleDialogo.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v){
+                AlertDialog.Builder builder = new AlertDialog.Builder(FormVIActivity.this);
+
+                //Constructor
+                builder.setIcon(R.drawable.userlogin).
+                        setTitle("Hola!").
+                        setMessage("Para finalizar ¿Deseas agregar un nuevo NÚCLEO FAMILIAR y sus características generales del hogar y vivienda?").
+                        setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(FormVIActivity.this, "Haz agregado un nuevo NUECLEO FAMILIAR", Toast.LENGTH_SHORT).show();
+
+                                //Limpiamos el formulario
+                                LimpiarForm();
+
+                            }
+                        }).
+                        setNegativeButton("No gracias!", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                //dialog.dismiss();
+
+                                //NOTA: con el boton de registrar valida los radios button
+                                if(v.getId()==R.id.btn_registrar ){ //ID del botton .btn_registrar
+                                    validarRadios();
+                                }
+                                Intent miIntent= new Intent(FormVIActivity.this,MainActivity.class);
+                                startActivity(miIntent);
+                            }
+                        });
+
+
+
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+            }
+
+        });
+
+
 
     }
 
@@ -120,11 +173,9 @@ public class FormVIActivity extends AppCompatActivity {
     @Override
     protected Dialog onCreateDialog(int id) {
         //return super.onCreateDialog(id);
-
         switch (id){
             case 0:
                 return new DatePickerDialog(this,oyenteSelectorFecha,año,mes,dia);
-
         }
         return  null;
     }
@@ -134,24 +185,13 @@ public class FormVIActivity extends AppCompatActivity {
         showDialog(TIPO_DIALOGO);
     }
 
-
     //Metodo fecha
     public void mostrarFecha(){
         campoFecha.setText(año+"/"+mes+"/"+dia);
     }
 
-
-   //Metodo1 radios
-    public void onClick(View view){
-
-        //NOTA: con el boton de registrar valida los radios button
-        if(view.getId()==R.id.btn_registrar ){ //ID del botton .btn_registrar
-            validar();
-        }
-
-    }
     //Metodo2 radios
-    public void validar(){
+    public void validarRadios(){
         String cad="Sexo de la persona: \n";
 
         if(r1.isChecked()==true){
@@ -177,4 +217,18 @@ public class FormVIActivity extends AppCompatActivity {
 
 
     }
+
+    public void LimpiarForm(){
+        NombreApellido = (EditText) findViewById(R.id.idNombreApellido);
+
+        //Limpiamos los editText
+        NombreApellido.setText(null);
+    }
+
+    //Metodo btn ayuda
+    public void onClickAyuda(View view){
+        Intent miIntent= new Intent(FormVIActivity.this,FormVActivity.class);
+        startActivity(miIntent);
+    }
+
 }

@@ -25,9 +25,9 @@
             <ImageView
                 android:id="@+id/app_bar_image"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="450dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/imagen6" />
+                android:src="@drawable/agricultura" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -275,8 +275,9 @@
         android:layout_margin="16dp"
         android:clickable="true"
         android:src="@android:drawable/ic_menu_help"
-        app:backgroundTint="#E91E63"
+        app:backgroundTint="#FFC107"
         app:fabSize="normal"
         app:layout_anchor="@id/appbar"
-        app:layout_anchorGravity="bottom|right|end" />
+        app:layout_anchorGravity="bottom|right|end"
+        android:onClick="onClickAyuda"/>
 </android.support.design.widget.CoordinatorLayout>

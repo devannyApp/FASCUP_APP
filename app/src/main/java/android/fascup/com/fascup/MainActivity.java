@@ -57,12 +57,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent i;
 
         switch (v.getId()){
-           case R.id.CardViewForm_I: i = new Intent(this,VistaFormI.class);startActivity(i); break;
+           case R.id.CardViewForm_I: i = new Intent(this,FormIActivity.class);startActivity(i); break;
            case R.id.CardViewForm_II: i = new Intent(this,FormIIIActivity.class);startActivity(i); break;
             case R.id.CardViewForm_III: i = new Intent(this,FormIIActivity.class);startActivity(i); break;
-            case R.id.CardViewForm_IV: i = new Intent(this,VistaFormVII.class);startActivity(i); break;
-            case R.id.CardViewForm_VI: i = new Intent(this,FormIVActivity.class);startActivity(i); break;
+            case R.id.CardViewForm_IV: i = new Intent(this,FormVIActivity.class);startActivity(i); break;
             case R.id.CardViewForm_V: i = new Intent(this,FromVIIActivity.class);startActivity(i); break;
+            case R.id.CardViewForm_VI: i = new Intent(this,FormIVActivity.class);startActivity(i); break;
            default:break;
 
         }

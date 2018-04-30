@@ -1,15 +1,19 @@
 package android.fascup.com.fascup;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class FormIActivity extends AppCompatActivity {
 
@@ -17,6 +21,7 @@ public class FormIActivity extends AppCompatActivity {
     Spinner comboMunicipio;
     Spinner comboReguardo;
     Spinner comboVereda;
+
 
 
     @Override
@@ -59,6 +64,18 @@ public class FormIActivity extends AppCompatActivity {
         });*/
 
 
+    }
+
+    //Metodo btn ayuda
+    public void onClickAyuda(View view){
+        Intent miIntent= new Intent(FormIActivity.this,VistaFormI.class);
+        startActivity(miIntent);
+    }
+
+    //Metodo btn enviar formulario
+    public void onClick(View view){
+        Intent miIntent= new Intent(FormIActivity.this,MainActivity.class);
+        startActivity(miIntent);
     }
 
 

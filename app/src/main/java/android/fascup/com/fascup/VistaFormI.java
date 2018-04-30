@@ -16,9 +16,6 @@ public class VistaFormI extends AppCompatActivity {
 
 
     }
-    public void onClick(View view){
-        Intent miIntent= new Intent(VistaFormI.this,FormIActivity.class);
-        startActivity(miIntent);
-    }
+
 
 }

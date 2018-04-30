@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="android.fascup.com.fascup.FormVActivity"
-    android:background="#7cb54e">
+    android:background="#FFC107"
+    tools:context="android.fascup.com.fascup.VistaFormIV">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,10 +55,9 @@
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
-            android:layout_height="450dp"
-            android:layout_marginTop="150dp"
+            android:layout_height="500dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/grupofamiliarvista" />
+            app:srcCompat="@drawable/imgen14" />
 
 
     </LinearLayout>

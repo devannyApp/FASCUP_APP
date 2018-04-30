@@ -1,16 +1,23 @@
 package android.fascup.com.fascup;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class FromVIIActivity extends AppCompatActivity {
+
+    //Variables del edidText
+    EditText NombrePredio, NombreVereda, Tamano;
 
     //Variables del Spinner
     Spinner comboAccesoTierra; //Pregunta 4
@@ -27,7 +34,10 @@ public class FromVIIActivity extends AppCompatActivity {
 
 
     //Varibles radios
-    RadioButton r4, r5, r6, r7; //Pregunta 7 y 8
+    RadioButton r1, r2, r3, r4; //Pregunta 7 y 8
+
+    //Varibles del boton de Dialogo alerta
+    Button simpleDialogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +48,11 @@ public class FromVIIActivity extends AppCompatActivity {
         //Oculta el Action Bar
         ActionBar actionBar = getSupportActionBar(); //o en su caso getSupportActionBar();
         actionBar.hide();
+
+        //Referenciamos los EdidText
+        NombrePredio = (EditText) findViewById(R.id.idNombrePropietario);
+        NombreVereda = (EditText) findViewById(R.id.idNombreVereda);
+        Tamano = (EditText) findViewById(R.id.idTamano);
 
         //Definimos Spinner Pregunta 4
         comboAccesoTierra = findViewById(R.id.idSpinnerAccesoTierra);
@@ -107,39 +122,73 @@ public class FromVIIActivity extends AppCompatActivity {
 
 
         //Referenciamnos los radios Pregunta 7
-        r4= (RadioButton) findViewById(R.id.idRadiosSiSuelo);
-        r5= (RadioButton) findViewById(R.id.idRadiosNoSuelo);
+        r1= (RadioButton) findViewById(R.id.idRadioSiSuelo);
+        r2= (RadioButton) findViewById(R.id.idRadioNoSuelo);
 
         //Referenciamnos los radios Pregunta 8
-        r6= (RadioButton) findViewById(R.id.idRadiosNoSuelo);
-        r7= (RadioButton) findViewById(R.id.idRadiosNoPredio);
+        r3= (RadioButton) findViewById(R.id.idRadioSiPredio);
+        r4= (RadioButton) findViewById(R.id.idRadioNoPredio);
+
+
+
+        //Referenciamos el boton
+        simpleDialogo  = (Button) findViewById(R.id.id_btn_predio);
+
+        simpleDialogo.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(final View v){
+                AlertDialog.Builder builder = new AlertDialog.Builder(FromVIIActivity.this);
+
+                //Constructor
+                builder.setIcon(R.drawable.userlogin).
+                        setTitle("Hola!").
+                        setMessage("Para finalizar ¿Deseas agregar otro grupo de IDENTIFICACIÓN DEL PREDIO y sus características generales?").
+                        setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(FromVIIActivity.this, "Haz agregado un nuevo grupo de Identificación del predio", Toast.LENGTH_SHORT).show();
+
+                                //Limpiamos el formulario
+                                LimpiarForm();
+
+                            }
+                        }).
+                        setNegativeButton("No gracias deseo continuar!", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                //dialog.dismiss();
+
+                                // Pasamos al siguiente formulario
+                                Intent miIntent= new Intent(FromVIIActivity.this,FormIXActivity.class);
+                                startActivity(miIntent);
+
+                            }
+                        });
+
+
+
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+            }
+
+        });
 
     }
 
-    //Metodo1 radios
-    public void onClick(View view){
-
-        //NOTA: con el boton de registrar valida los radios button
-        if(view.getId()==R.id.btn_registrar ){ //ID del botton .btn_registrar
-            validar();
-        }
-
-        // Pasamos al siguiente formulario
-        Intent miIntent= new Intent(FromVIIActivity.this,FormIXActivity.class);
+    //Metodo btn ayuda
+    public void onClickAyuda(View view){
+        Intent miIntent= new Intent(FromVIIActivity.this,VistaFormIV.class);
         startActivity(miIntent);
+    }
+
+
+    public void  LimpiarForm(){
+
+        NombrePredio.setText(null);
+        NombreVereda.setText(null);
+        Tamano.setText(null);
 
     }
-    //Metodo2 radios
-    public void validar(){
-        String cad="analisis de suelo: \n";
 
-        if(r4.isChecked()==true){
-            cad+="Si\n";
-        }
-        if(r5.isChecked()){
-            cad+="No";
-        }
-        Toast.makeText(getApplicationContext(),cad,Toast.LENGTH_SHORT).show();
-    }
 
 }

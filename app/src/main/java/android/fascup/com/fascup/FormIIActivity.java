@@ -1,8 +1,10 @@
 package android.fascup.com.fascup;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.Spinner;
@@ -52,5 +54,18 @@ public class FormIIActivity extends AppCompatActivity {
         CheckBoxManufacturaProductos = (CheckBox) findViewById(R.id.idCheckBoxManufacturaProductos);
 
 
+    }
+
+
+    //Metodo btn ayuda
+    public void onClickAyuda(View view){
+        Intent miIntent= new Intent(FormIIActivity.this,VistaFormIII.class);
+        startActivity(miIntent);
+    }
+
+    //Metodo btn enviar formulario
+    public void onClick(View view){
+        Intent miIntent= new Intent(FormIIActivity.this,MainActivity.class);
+        startActivity(miIntent);
     }
 }

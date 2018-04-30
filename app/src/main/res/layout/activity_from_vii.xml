@@ -7,7 +7,7 @@
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
-        android:layout_height="350dp"
+        android:layout_height="380dp"
         android:layout_width="match_parent">
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -26,7 +26,7 @@
                 android:id="@+id/app_bar_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/imagen9"
+                android:src="@drawable/imagen13"
                 android:scaleType="centerCrop" />
 
             <android.support.v7.widget.Toolbar
@@ -125,7 +125,7 @@
                             android:textSize="16sp" />
 
                         <EditText
-                            android:id="@+id/idNombrePropietario"
+                            android:id="@+id/idNombreVereda"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3sp"
@@ -195,7 +195,7 @@
                             android:textColor="#a1a1a1"
                             android:textSize="16sp" />
                         <EditText
-                            android:id="@+id/idNombrePropietario"
+                            android:id="@+id/idTamano"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3sp"
@@ -239,13 +239,13 @@
                             android:textColor="#a1a1a1"
                             android:textSize="16sp" />
 
-                        <LinearLayout
+                        <RadioGroup
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="horizontal">
 
                             <RadioButton
-                                android:id="@+id/idRadiosSiSuelo"
+                                android:id="@+id/idRadioSiSuelo"
                                 android:layout_width="150dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
@@ -253,14 +253,14 @@
                                 android:textColor="#6b6b6b" />
 
                             <RadioButton
-                                android:id="@+id/idRadiosNoSuelo"
+                                android:id="@+id/idRadioNoSuelo"
                                 android:layout_width="150dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
                                 android:text="No"
                                 android:textColor="#6b6b6b" />
 
-                        </LinearLayout>
+                        </RadioGroup>
 
 
 
@@ -275,12 +275,12 @@
                             android:textColor="#a1a1a1"
                             android:textSize="16sp" />
 
-                        <LinearLayout
+                        <RadioGroup
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="horizontal">
                             <RadioButton
-                                android:id="@+id/idRadiosSiPredio"
+                                android:id="@+id/idRadioSiPredio"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
@@ -288,7 +288,7 @@
                                 android:layout_marginTop="8dp"
                                 android:textColor="#6b6b6b" />
                             <RadioButton
-                                android:id="@+id/idRadiosNoPredio"
+                                android:id="@+id/idRadioNoPredio"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="95dp"
@@ -296,186 +296,230 @@
                                 android:layout_marginTop="8dp"
                                 android:textColor="#6b6b6b" />
 
-                        </LinearLayout>
-
-                        <!--Pregunta 9 -->
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="12dp"
-                            android:text="9. Hay fuentes hídricas en?"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-                        <Spinner
-                            android:id="@+id/idSpinnerFuenteHidricas"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/editselecttextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="50sp" />
-
-                        <!--Pregunta 10 -->
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="12dp"
-                            android:text="10. Hay lugares no aptos para la agricultura o la ganaderia en"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-                        <Spinner
-                            android:id="@+id/idSpinnerLugaresNoAptos"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/editselecttextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="50sp" />
-
-                        <!--Pregunta 11 -->
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="12dp"
-                            android:text="11. El predio tiene filos o cordilleras"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-                        <Spinner
-                            android:id="@+id/idSpinnerPredioCordilleras"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/editselecttextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="50sp" />
-
-                        <!--Pregunta 12 -->
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="12dp"
-                            android:text="12. Tiene cercas en"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-                        <Spinner
-                            android:id="@+id/idSpinnerTieneCercas"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/editselecttextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="50sp" />
-
-                        <!--Pregunta 13 -->
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="12dp"
-                            android:text="13. Hay zonas de páramo en"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-                        <Spinner
-                            android:id="@+id/idSpinnerZonasParamos"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/editselecttextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="50sp" />
-
-                        <!--Pregunta 14 -->
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="12dp"
-                            android:text="14. Área de piscicultura en"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-                        <Spinner
-                            android:id="@+id/idSpinnerAreaPiscicultura"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/editselecttextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="50sp" />
-
-                        <!--Pregunta 15 -->
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="12dp"
-                            android:text="15. Hay viveros en"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-                        <Spinner
-                            android:id="@+id/idSpinnerVivieros"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/editselecttextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="50sp" />
-
-                        <!--Pregunta 16 -->
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="12dp"
-                            android:text="16. Cuenta con Tul/huerta en"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-                        <Spinner
-                            android:id="@+id/idSpinnerHuerta"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/editselecttextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="50sp" />
-
-                        <!--Pregunta 17 -->
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginTop="12dp"
-                            android:text="17. Tiene sistema agro-pastoril en"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
-                        <Spinner
-                            android:id="@+id/idSpinnerSistemaP"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/editselecttextstyle"
-                            android:textColor="#6b6b6b"
-                            android:textSize="50sp" />
-
+                        </RadioGroup>
 
                     </LinearLayout>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/headertituloverde"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contexte la siguiente encuesta"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <!--Pregunta 9 -->
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:text="9. Hay fuentes hídricas en?"
+                        android:textColor="#a1a1a1"
+                        android:textSize="16sp" />
+                    <Spinner
+                        android:id="@+id/idSpinnerFuenteHidricas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/editselecttextstyle"
+                        android:textColor="#6b6b6b"
+                        android:textSize="50sp" />
+
+                    <!--Pregunta 10 -->
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:text="10. Hay lugares no aptos para la agricultura o la ganaderia en"
+                        android:textColor="#a1a1a1"
+                        android:textSize="16sp" />
+                    <Spinner
+                        android:id="@+id/idSpinnerLugaresNoAptos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/editselecttextstyle"
+                        android:textColor="#6b6b6b"
+                        android:textSize="50sp" />
+
+                    <!--Pregunta 11 -->
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:text="11. El predio tiene filos o cordilleras"
+                        android:textColor="#a1a1a1"
+                        android:textSize="16sp" />
+                    <Spinner
+                        android:id="@+id/idSpinnerPredioCordilleras"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/editselecttextstyle"
+                        android:textColor="#6b6b6b"
+                        android:textSize="50sp" />
+
+                    <!--Pregunta 12 -->
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:text="12. Tiene cercas en"
+                        android:textColor="#a1a1a1"
+                        android:textSize="16sp" />
+                    <Spinner
+                        android:id="@+id/idSpinnerTieneCercas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/editselecttextstyle"
+                        android:textColor="#6b6b6b"
+                        android:textSize="50sp" />
+
+                    <!--Pregunta 13 -->
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:text="13. Hay zonas de páramo en"
+                        android:textColor="#a1a1a1"
+                        android:textSize="16sp" />
+                    <Spinner
+                        android:id="@+id/idSpinnerZonasParamos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/editselecttextstyle"
+                        android:textColor="#6b6b6b"
+                        android:textSize="50sp" />
+
+                    <!--Pregunta 14 -->
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:text="14. Área de piscicultura en"
+                        android:textColor="#a1a1a1"
+                        android:textSize="16sp" />
+                    <Spinner
+                        android:id="@+id/idSpinnerAreaPiscicultura"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/editselecttextstyle"
+                        android:textColor="#6b6b6b"
+                        android:textSize="50sp" />
+
+                    <!--Pregunta 15 -->
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:text="15. Hay viveros en"
+                        android:textColor="#a1a1a1"
+                        android:textSize="16sp" />
+                    <Spinner
+                        android:id="@+id/idSpinnerVivieros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/editselecttextstyle"
+                        android:textColor="#6b6b6b"
+                        android:textSize="50sp" />
+
+                    <!--Pregunta 16 -->
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:text="16. Cuenta con Tul/huerta en"
+                        android:textColor="#a1a1a1"
+                        android:textSize="16sp" />
+                    <Spinner
+                        android:id="@+id/idSpinnerHuerta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/editselecttextstyle"
+                        android:textColor="#6b6b6b"
+                        android:textSize="50sp" />
+
+                    <!--Pregunta 17 -->
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:text="17. Tiene sistema agro-pastoril en"
+                        android:textColor="#a1a1a1"
+                        android:textSize="16sp" />
+                    <Spinner
+                        android:id="@+id/idSpinnerSistemaP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/editselecttextstyle"
+                        android:textColor="#6b6b6b"
+                        android:textSize="50sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
             <Button
-                android:id="@+id/btn_registrar"
+                android:id="@+id/id_btn_predio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -499,8 +543,9 @@
         android:layout_margin="16dp"
         android:clickable="true"
         android:src="@android:drawable/ic_menu_help"
-        app:backgroundTint="#E91E63"
+        app:backgroundTint="#FFC107"
         app:fabSize="normal"
         app:layout_anchor="@id/appbar"
-        app:layout_anchorGravity="bottom|right|end" />
+        app:layout_anchorGravity="bottom|right|end"
+        android:onClick="onClickAyuda"/>
 </android.support.design.widget.CoordinatorLayout>

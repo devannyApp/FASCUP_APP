@@ -159,7 +159,7 @@ public class FromVIIActivity extends AppCompatActivity {
                                 //dialog.dismiss();
 
                                 // Pasamos al siguiente formulario
-                                Intent miIntent= new Intent(FromVIIActivity.this,FormIXActivity.class);
+                                Intent miIntent= new Intent(FromVIIActivity.this,FormNueveActivity.class);
                                 startActivity(miIntent);
 
                             }

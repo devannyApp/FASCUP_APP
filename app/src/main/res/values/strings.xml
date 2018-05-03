@@ -18,4 +18,5 @@
     <string name="mensaje1_VistaFormVII">¡Bienvenido!</string>
     <string name="mensaje2_VistaFormVII">Estas proximo a ingresar un grupo</string>
     <string name="mensaje3_VistaFormVII">Agregar un grupo</string>
+    <string name="title_activity_vista_form_nueve">VistaFormNueve</string>
 </resources>

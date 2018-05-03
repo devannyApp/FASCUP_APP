@@ -118,37 +118,40 @@
                             android:textSize="18sp"
                             android:visibility="visible" />
 
-                        <!--Pregunta 2-->
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="14dp"
-                            android:text="2. Hay área protegida?"
-                            android:textColor="#a1a1a1"
-                            android:textSize="16sp" />
 
-                        <RadioGroup
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
 
-                            <RadioButton
-                                android:id="@+id/idRadioAreaProtegidaSi"
-                                android:layout_width="150dp"
+                            <!--Pregunta 2-->
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="Si"
-                                android:textColor="#6b6b6b" />
+                                android:layout_marginTop="14dp"
+                                android:text="2. Hay área protegida?"
+                                android:textColor="#a1a1a1"
+                                android:textSize="16sp" />
 
-                            <RadioButton
-                                android:id="@+id/idRadioAreaProtegidaNo"
-                                android:layout_width="150dp"
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="No"
-                                android:textColor="#6b6b6b" />
-                        </RadioGroup>
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/idRadioAreaProtegidaSi"
+                                    android:layout_width="150dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Si"
+                                    android:textColor="#6b6b6b" />
+
+                                <RadioButton
+                                    android:id="@+id/idRadioAreaProtegidaNo"
+                                    android:layout_width="150dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="No"
+                                    android:textColor="#6b6b6b" />
+                            </RadioGroup>
 
                         <!--Pregunta 3-->
                         <TextView
@@ -163,7 +166,7 @@
                         <RadioGroup
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="vertical">
 
                             <RadioButton
                                 android:id="@+id/idRadioAreaIntervenidaSi"
@@ -385,8 +388,9 @@
         android:layout_margin="16dp"
         android:clickable="true"
         android:src="@android:drawable/ic_menu_help"
-        app:backgroundTint="#E91E63"
+        app:backgroundTint="#FFC107"
         app:fabSize="normal"
         app:layout_anchor="@id/appbar"
-        app:layout_anchorGravity="bottom|right|end" />
+        app:layout_anchorGravity="bottom|right|end"
+        android:onClick="onClickAyuda"/>
 </android.support.design.widget.CoordinatorLayout>

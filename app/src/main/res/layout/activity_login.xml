@@ -25,7 +25,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/paisajelogin1" />
+                    app:srcCompat="@drawable/imagenlogin" />
             </LinearLayout>
 
             <LinearLayout
@@ -50,16 +50,16 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="20dp"
+                            android:layout_margin="40dp"
                             android:orientation="vertical">
                             <TextView
                                 android:id="@+id/textView"
-                                android:layout_width="250sp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                android:layout_gravity="center"
                                 android:text="Iniciar sesión"
                                 android:textColor="#7cb342"
-                                android:textSize="35sp"
+                                android:textSize="30sp"
                                 android:layout_marginBottom="25dp" />
 
                             <EditText
@@ -72,7 +72,7 @@
                                 android:inputType="textMultiLine"
                                 android:textColor="#6b6b6b"
                                 android:textColorLink="@color/colorPrimary"
-                                android:textSize="20sp"
+                                android:textSize="18sp"
                                 android:textStyle="bold"
                                 android:visibility="visible" />
 
@@ -88,7 +88,7 @@
                                 android:inputType="textPassword"
                                 android:textColor="#6b6b6b"
                                 android:textColorLink="@color/colorPrimaryDark"
-                                android:textSize="20sp"
+                                android:textSize="18sp"
                                 android:textStyle="bold"
                                 android:visibility="visible"/>
 

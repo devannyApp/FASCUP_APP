@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 
-public class FormIXActivity extends AppCompatActivity {
 
+public class FormNueveActivity extends AppCompatActivity {
 
     //Variables CheckBox pregunta 1
     CheckBox CheckboxRastrojo,CheckboxPendientes,CheckboxRiesgoDerumbes, CheckboxRiesgosHundimiento,
@@ -18,8 +18,7 @@ public class FormIXActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_form_ix);
-
+        setContentView(R.layout.activity_form_nueve);
 
         //Oculta el Action Bar
         ActionBar actionBar = getSupportActionBar(); //o en su caso getSupportActionBar();
@@ -35,12 +34,14 @@ public class FormIXActivity extends AppCompatActivity {
         CheckboxRiesgoErosion = (CheckBox) findViewById(R.id.idCheckboxRiesgoErosion);
         CheckboxConservacion = (CheckBox) findViewById(R.id.idCheckboxConservacion);
     }
-
     public void onClick(View view){
-
         // Pasamos al siguiente formulario
-        Intent miIntent= new Intent(FormIXActivity.this,FormXActivity.class);
+        Intent miIntent= new Intent(FormNueveActivity.this,FormXActivity.class);
         startActivity(miIntent);
-
+    }
+    public void onClickBtnAyuda(View view){
+        // Pasamos al siguiente formulario
+        Intent miIntent= new Intent(FormNueveActivity.this,VistaFormIX.class);
+        startActivity(miIntent);
     }
 }

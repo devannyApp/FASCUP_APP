@@ -393,7 +393,7 @@
         android:layout_margin="16dp"
         android:clickable="true"
         android:src="@android:drawable/ic_menu_help"
-        app:backgroundTint="#E91E63"
+        app:backgroundTint="#FFC107"
         app:fabSize="normal"
         app:layout_anchor="@id/appbar"
         app:layout_anchorGravity="bottom|right|end"

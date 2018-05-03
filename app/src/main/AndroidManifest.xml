@@ -18,7 +18,6 @@
         <activity
             android:name=".FormIIIActivity"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".FormMenuActivity" />
         <activity
             android:name=".LoginActivity"
             android:windowSoftInputMode="stateHidden">
@@ -60,9 +59,6 @@
             android:name=".FormVIIIActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".FormIXActivity"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
             android:name=".FormXActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity
@@ -71,8 +67,20 @@
         <activity
             android:name=".VistaFormIII"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".VistaFormIV"
+        <activity
+            android:name=".VistaFormIV"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".VistaFormX"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".FormNueveActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VistaFormIX"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".VistaFormXI"></activity>
     </application>
 
 </manifest>

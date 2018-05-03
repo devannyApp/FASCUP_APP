@@ -58,7 +58,13 @@ public class FormXActivity extends AppCompatActivity {
 
         comboActividadArea.setAdapter(adapter2);
     }
+    public void onClickAyuda(View view){
 
+        // Pasamos al siguiente formulario
+        Intent miIntent= new Intent(FormXActivity.this,VistaFormX.class);
+        startActivity(miIntent);
+
+    }
     public void onClick(View view){
 
         // Pasamos al siguiente formulario

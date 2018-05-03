@@ -201,6 +201,11 @@
                     android:textColor="#a1a1a1"
                     android:textSize="16sp" />
 
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
                 <RadioButton
                     android:id="@+id/idRadioRio"
                     android:layout_width="150dp"
@@ -240,6 +245,7 @@
                     android:layout_marginTop="8dp"
                     android:text="Otro"
                     android:textColor="#6b6b6b" />
+                </RadioGroup>
 
             </LinearLayout>
         </LinearLayout>
@@ -269,7 +275,7 @@
         android:layout_margin="16dp"
         android:clickable="true"
         android:src="@android:drawable/ic_menu_help"
-        app:backgroundTint="#E91E63"
+        app:backgroundTint="#FFC107"
         app:fabSize="normal"
         app:layout_anchor="@id/appbar"
         app:layout_anchorGravity="bottom|right|end" />

@@ -155,13 +155,11 @@ public class FromVIIActivity extends AppCompatActivity {
                         }).
                         setNegativeButton("No gracias deseo continuar!", new DialogInterface.OnClickListener() {
                             @Override
-                            public void onClick(DialogInterface dialog, int which) {
+                            public void onClick(DialogInterface dialog, int which){
                                 //dialog.dismiss();
 
-                                // Pasamos al siguiente formulario
-                                Intent miIntent= new Intent(FromVIIActivity.this,FormNueveActivity.class);
-                                startActivity(miIntent);
-
+                                Intent i =new Intent(FromVIIActivity.this,FormNueveActivity.class);
+                                startActivity(i);
                             }
                         });
 

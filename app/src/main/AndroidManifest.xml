@@ -80,7 +80,8 @@
             android:name=".VistaFormIX"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".VistaFormXI"></activity>
+
+        <activity android:name=".VistaFormXI"/>
     </application>
 
 </manifest>

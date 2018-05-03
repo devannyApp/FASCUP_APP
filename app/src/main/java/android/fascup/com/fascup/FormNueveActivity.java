@@ -5,14 +5,17 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 
 
-public class FormNueveActivity extends AppCompatActivity {
+public class FormNueveActivity extends AppCompatActivity  {
 
     //Variables CheckBox pregunta 1
     CheckBox CheckboxRastrojo,CheckboxPendientes,CheckboxRiesgoDerumbes, CheckboxRiesgosHundimiento,
             CheckboxRiesgoCreciente, CheckboxRiesgoAgrietamiento, CheckboxRiesgoErosion, CheckboxConservacion;
+    //Variable btn;
+    Button  btnAyuda;
 
 
     @Override
@@ -23,6 +26,8 @@ public class FormNueveActivity extends AppCompatActivity {
         //Oculta el Action Bar
         ActionBar actionBar = getSupportActionBar(); //o en su caso getSupportActionBar();
         actionBar.hide();
+
+
 
         //Referenciamos CheckBox Pregunta 1
         CheckboxRastrojo = (CheckBox) findViewById(R.id.idCheckboxRastrojo);
@@ -39,9 +44,9 @@ public class FormNueveActivity extends AppCompatActivity {
         Intent miIntent= new Intent(FormNueveActivity.this,FormXActivity.class);
         startActivity(miIntent);
     }
-    public void onClickBtnAyuda(View view){
+    public void onClickAyuda(View view){
         // Pasamos al siguiente formulario
-        Intent miIntent= new Intent(FormNueveActivity.this,VistaFormIX.class);
+        Intent miIntent= new Intent(FormNueveActivity.this,VistaFormX.class);
         startActivity(miIntent);
     }
 }

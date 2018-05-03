@@ -232,6 +232,7 @@
     </android.support.v4.widget.NestedScrollView>
 
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_ayuda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -241,5 +242,5 @@
         app:fabSize="normal"
         app:layout_anchor="@id/appbar"
         app:layout_anchorGravity="bottom|right|end"
-        android:onClick="onClickBtnAyuda" />
+        android:onClick="onClickAyuda" />
 </android.support.design.widget.CoordinatorLayout>
